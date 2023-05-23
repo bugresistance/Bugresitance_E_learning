@@ -611,6 +611,8 @@ const Service = () => {
 
                     </div>
 
+                    
+
                     {/* Software Development Methedology */}
                     <div className='test_section' style={{backgroundColor:"white"}}>
                         <h3 className='text-center header-title'>Software Development Methedology</h3>
