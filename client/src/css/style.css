@@ -1814,7 +1814,6 @@ body::-webkit-scrollbar-thumb:hover {
     padding-left: 15px;
     padding-right: 15px;
 }
-
 #header-section .navbar .navbar-nav .dropdown a,
 #header-section .navbar .navbar-nav li a{
     font-size: 18px;
@@ -4245,7 +4244,6 @@ body::-webkit-scrollbar-thumb:hover {
     right: 30px;
     top: 16px;
 }
-
 #contact-me .form-area .nice-select{
     border: 1px solid #efeafa;
     border-radius: 30px;
