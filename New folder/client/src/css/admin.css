@@ -1,0 +1,17 @@
+.admin_page_wrapper {
+    margin-top: 150px !important;
+}
+
+.add_student_slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.course_date {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
