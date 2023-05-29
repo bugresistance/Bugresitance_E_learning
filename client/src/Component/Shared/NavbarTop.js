@@ -372,7 +372,7 @@ const NavbarTop = () => {
 
 
                       <li className='visible-list' ><Link to="/contact">Contact</Link></li>
-                      <li className='visible-list' ><Link to="/form">Admission Form</Link></li>
+                      {/* <li className='visible-list' ><Link to="/form">Admission Form</Link></li> */}
                     
                       {localStorage.getItem('userData') && <li className='visible-list' ><Link to="/addslide">Panel</Link></li>}
                       {localStorage.getItem('userData') && <li className='visible-list' ><Link to="" onClick={() => { logOut() }}>Logout</Link></li>}
