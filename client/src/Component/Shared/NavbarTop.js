@@ -167,13 +167,14 @@ const NavbarTop = () => {
                       <li className='visible-list' ><Link to="/courseadmission">Course Admission</Link></li>
                       {/* <li className='visible-list' ><Link to="/Bug_resistance_eLearning/" >Career-Blog</Link></li> */}
                       {/* <li className='visible-list'> */}
-                      <Dropdown className='visible-list' nav inNavbar isOpen={dropdownOpen}   toggle={toggleDropdown} onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
-                      {/* <Dropdown nav inNavbar isOpen={dropdownOpen} toggle={toggleDropdown} onClick={toggleDropdown}> */}
+                      {/* <Dropdown className='visible-list' nav inNavbar isOpen={dropdownOpen}   toggle={toggleDropdown} onClick={toggleDropdown} onMouseLeave={toggleDropdown}> */}
+                      {/* nav inNavbar isOpen={dropdownOpen}   toggle={toggleDropdown} onClick={toggleDropdown} onMouseLeave={toggleDropdown} */}
+                      <Dropdown nav inNavbar isOpen={dropdownOpen} toggle={toggleDropdown} onClick={toggleDropdown}>
 
-                        <DropdownToggle nav>
+                        <DropdownToggle nav >
                           Services
                         </DropdownToggle>
-                        <DropdownMenu right style={{ top: "100%",   }}  className="custom-dropdown-menu" id='c_d_m'>
+                        <DropdownMenu right style={{ top: "100%",}}  className="custom-dropdown-menu" id='c_d_m'>
                           <div className="triangle"></div> 
                           <Box sx={{ 
                             bgcolor: 'background.paper', width: 700, 

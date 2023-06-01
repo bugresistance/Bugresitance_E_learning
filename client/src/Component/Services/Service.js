@@ -34,6 +34,9 @@ import s4 from '../../images/s4_Business.png'
 import s5 from '../../images/s5_ecommerce.png'
 import s6 from '../../images/s6_B2B.png'
 import s7 from '../../images/s7_Software_Development.png'
+
+import tick from '../../images/tick.png'
+
 const contents = [
     {
         title: "Experience",
@@ -41,24 +44,24 @@ const contents = [
     },
     {
         title: "Quick Start",
-        details: "During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries. During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries. During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries."
+        details: "Most of our projects start with just a few day’s advance notice; 30% of projects begin within one day after signing the documents."
     },
     {
         title: "Transparency",
-        details: "During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries. During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries. During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries."
+        details: "Before the project begins, we can provide you with estimates of time and money to be spent on testing. You can also choose and interview testers for your project."
     },
     {
         title: "Extensive Infrastructure",
-        details: "During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries. During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries. During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries."
+        details: "We have a large pool of 350+ real testing devices and experience in working with 40+ testing tools."
     },
 
     {
         title: "on-demand services",
-        details: "During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries. During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries. During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries."
+        details: "The requested number of our 250+ QA engineers are ready to join your project at any phase of the software development life cycle, testing only what you need and when you need it."
     },
     {
         title: "Flexibility",
-        details: "During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries. During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries. During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries."
+        details: "We have different cooperation models suitable for projects of any scale and complexity."
     },
 
 ]
@@ -90,23 +93,23 @@ const Service = () => {
         }
 
     }
-    
+
     useEffect(() => {
-        
+
         window.addEventListener('resize', updateSize)
 
         // return () => window.removeEventListener("resize", updateSize)
-    //   width = window.innerWidth
-    //   console.log("Width",size);
+        //   width = window.innerWidth
+        //   console.log("Width",size);
     }, [size])
 
-    
-    // useEffect(() => {
-    //     window.scrollTo(0, 0)
-    // }, [])
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
-        <div  ref={targetRef}>
+        <div ref={targetRef}>
             <NavbarTop />
             <div className='full_wrapper'>
                 <div className='page-wrapper' style={{ maxWidth: "2100px" }}>
@@ -206,7 +209,8 @@ const Service = () => {
 
                                 <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
                                     <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                        <FontAwesomeIcon icon={faDisplay} size="4x" />
+                                        {/* <FontAwesomeIcon icon={faDisplay} size="4x" /> */}
+                                        <img src={tick} style={{height:"40px",width:"40px"}}/>
                                         <p style={{ marginLeft: "15px" }}>Websites </p>
                                     </div>
 
@@ -214,7 +218,8 @@ const Service = () => {
 
                                 <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
                                     <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                        <FontAwesomeIcon icon={faDisplay} size="4x" />
+                                        {/* <FontAwesomeIcon icon={faDisplay} size="4x" /> */}
+                                        <img src={tick} style={{height:"40px",width:"40px"}}/>
                                         <p style={{ marginLeft: "15px" }}>Web and Mobile Applications</p>
                                     </div>
 
@@ -222,7 +227,8 @@ const Service = () => {
 
                                 <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
                                     <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                        <FontAwesomeIcon icon={faDisplay} size="4x" />
+                                        {/* <FontAwesomeIcon icon={faDisplay} size="4x" /> */}
+                                        <img src={tick} style={{height:"40px",width:"40px"}}/>
                                         <p style={{ marginLeft: "15px" }}>Advanced web services and portals</p>
                                     </div>
 
@@ -230,7 +236,8 @@ const Service = () => {
 
                                 <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
                                     <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                        <FontAwesomeIcon icon={faDisplay} size="4x" />
+                                        {/* <FontAwesomeIcon icon={faDisplay} size="4x" /> */}
+                                        <img src={tick} style={{height:"40px",width:"40px"}}/>
                                         <p style={{ marginLeft: "15px" }}>Distributed systems</p>
                                     </div>
 
@@ -238,7 +245,8 @@ const Service = () => {
 
                                 <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
                                     <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                        <FontAwesomeIcon icon={faDisplay} size="4x" />
+                                        {/* <FontAwesomeIcon icon={faDisplay} size="4x" /> */}
+                                        <img src={tick} style={{height:"40px",width:"40px"}}/>
                                         <p style={{ marginLeft: "15px" }}>Cloud solutions</p>
                                     </div>
 
@@ -246,7 +254,8 @@ const Service = () => {
 
                                 <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
                                     <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                        <FontAwesomeIcon icon={faDisplay} size="4x" />
+                                        {/* <FontAwesomeIcon icon={faDisplay} size="4x" /> */}
+                                        <img src={tick} style={{height:"40px",width:"40px"}}/>
                                         <p style={{ marginLeft: "15px" }}>Complex CRM,ERP, and EMS systems</p>
                                     </div>
 
@@ -254,7 +263,8 @@ const Service = () => {
 
                                 <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
                                     <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                        <FontAwesomeIcon icon={faDisplay} size="4x" />
+                                        {/* <FontAwesomeIcon icon={faDisplay} size="4x" /> */}
+                                        <img src={tick} style={{height:"40px",width:"40px"}}/>
                                         <p style={{ marginLeft: "15px" }}>Desktop applications</p>
                                     </div>
 
@@ -262,7 +272,8 @@ const Service = () => {
 
                                 <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
                                     <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                        <FontAwesomeIcon icon={faDisplay} size="4x" />
+                                        {/* <FontAwesomeIcon icon={faDisplay} size="4x" /> */}
+                                        <img src={tick} style={{height:"40px",width:"40px"}}/>
                                         <p style={{ marginLeft: "15px" }}>CMS and online website creation tools</p>
                                     </div>
 
@@ -270,7 +281,8 @@ const Service = () => {
 
                                 <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
                                     <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                        <FontAwesomeIcon icon={faDisplay} size="4x" />
+                                        {/* <FontAwesomeIcon icon={faDisplay} size="4x" /> */}
+                                        <img src={tick} style={{height:"40px",width:"40px"}}/>
                                         <p style={{ marginLeft: "15px" }}>B2B systems</p>
                                     </div>
 
@@ -305,8 +317,10 @@ const Service = () => {
                                         <div className='border_line_red'>
                                         </div>
                                         <div className='border_text_body'>
-                                            <h6 className='border_text_title_red'>Functional testing</h6>
-                                            <p className='border_text_para'>We evaluate if a web app works correctly according to the requirements.</p>
+                                            <h6 className='border_text_title_red'>Compatibility testing</h6>
+                                            <p className='border_text_para'>
+                                                We check if a web application works correctly in different browsers, on different devices, and other platforms.
+                                            </p>
                                         </div>
                                     </div>
 
@@ -317,8 +331,24 @@ const Service = () => {
                                         <div className='border_line_red'>
                                         </div>
                                         <div className='border_text_body'>
-                                            <h6 className='border_text_title_red'>Functional testing</h6>
-                                            <p className='border_text_para'>We evaluate if a web app works correctly according to the requirements.</p>
+                                            <h6 className='border_text_title_red'>Usability testing</h6>
+                                            <p className='border_text_para'>
+                                                We check if a web application is convenient, easy to use, and user-friendly.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </Grid>
+
+
+                                <Grid item xs={12} sm={6} md={6}>
+                                    <div style={{ display: "flex" }}>
+                                        <div className='border_line_purple'>
+                                        </div>
+                                        <div className='border_text_body'>
+                                            <h6 className='border_text_title_purple'>Security testing</h6>
+                                            <p className='border_text_para'>
+                                                We assess a web app’s security, the possibilities of unauthorized access and data breaches.
+                                            </p>
                                         </div>
                                     </div>
 
@@ -330,21 +360,10 @@ const Service = () => {
                                         <div className='border_line_purple'>
                                         </div>
                                         <div className='border_text_body'>
-                                            <h6 className='border_text_title_purple'>Functional testing</h6>
-                                            <p className='border_text_para'>We evaluate if a web app works correctly according to the requirements.</p>
-                                        </div>
-                                    </div>
-
-                                </Grid>
-
-
-                                <Grid item xs={12} sm={6} md={6}>
-                                    <div style={{ display: "flex" }}>
-                                        <div className='border_line_purple'>
-                                        </div>
-                                        <div className='border_text_body'>
-                                            <h6 className='border_text_title_purple'>Functional testing</h6>
-                                            <p className='border_text_para'>We evaluate if a web app works correctly according to the requirements.</p>
+                                            <h6 className='border_text_title_purple'>Integration testing</h6>
+                                            <p className='border_text_para'>
+                                                We test integration between different parts of a web app and between a web application and third-party solutions.
+                                            </p>
                                         </div>
                                     </div>
 
@@ -356,8 +375,10 @@ const Service = () => {
                                         <div className='border_line_red'>
                                         </div>
                                         <div className='border_text_body'>
-                                            <h6 className='border_text_title_red'>Functional testing</h6>
-                                            <p className='border_text_para'>We evaluate if a web app works correctly according to the requirements.</p>
+                                            <h6 className='border_text_title_red'>Data testing</h6>
+                                            <p className='border_text_para'>
+                                                We check if there are any issues with the data that are entered into and processed in a web application.
+                                            </p>
                                         </div>
                                     </div>
 
@@ -368,8 +389,10 @@ const Service = () => {
                                         <div className='border_line_red'>
                                         </div>
                                         <div className='border_text_body'>
-                                            <h6 className='border_text_title_red'>Functional testing</h6>
-                                            <p className='border_text_para'>We evaluate if a web app works correctly according to the requirements.</p>
+                                            <h6 className='border_text_title_red'>API testing</h6>
+                                            <p className='border_text_para'>
+                                                We check whether a web app works correctly with third-party APIs. If a web application has its own API, we evaluate its work as well.
+                                            </p>
                                         </div>
                                     </div>
 
@@ -380,8 +403,10 @@ const Service = () => {
                                         <div className='border_line_purple'>
                                         </div>
                                         <div className='border_text_body'>
-                                            <h6 className='border_text_title_purple'>Functional testing</h6>
-                                            <p className='border_text_para'>We evaluate if a web app works correctly according to the requirements.</p>
+                                            <h6 className='border_text_title_purple'>Regression testing</h6>
+                                            <p className='border_text_para'>
+                                                We check whether the recent bug fixes and changes in a web app caused any disruptions in its work.
+                                            </p>
                                         </div>
                                     </div>
 
@@ -392,8 +417,10 @@ const Service = () => {
                                         <div className='border_line_purple'>
                                         </div>
                                         <div className='border_text_body'>
-                                            <h6 className='border_text_title_purple'>Functional testing</h6>
-                                            <p className='border_text_para'>We evaluate if a web app works correctly according to the requirements.</p>
+                                            <h6 className='border_text_title_purple'>Performance testing</h6>
+                                            <p className='border_text_para'>
+                                                We assess a web app’s performance (speed, load, resource consumption, etc.).
+                                            </p>
                                         </div>
                                     </div>
 
@@ -405,8 +432,10 @@ const Service = () => {
                                         <div className='border_line_red'>
                                         </div>
                                         <div className='border_text_body'>
-                                            <h6 className='border_text_title_red'>Functional testing</h6>
-                                            <p className='border_text_para'>We evaluate if a web app works correctly according to the requirements.</p>
+                                            <h6 className='border_text_title_red'>Accessibility testing</h6>
+                                            <p className='border_text_para'>
+                                                We assess if people with disabilities can use a web app easily.
+                                            </p>
                                         </div>
                                     </div>
 
@@ -492,7 +521,7 @@ const Service = () => {
                     </div>
 
                     {/* Project Management Tools */}
-                    <div className='test_section' style={{backgroundColor:"white"}}>
+                    <div className='test_section' style={{ backgroundColor: "white" }}>
                         <h3 className='text-center header-title'>Project Management Tools</h3>
                         <div className='test_web_body'>
                             <Grid container spacing={{ xs: 2, sm: 2, md: 3 }} columns={{ xs: 4, sm: 12, md: 12 }}>
@@ -568,7 +597,7 @@ const Service = () => {
                     </div>
 
                     {/* Test Case Management Tools */}
-                    <div className='test_section' style={{backgroundColor:"white"}}>
+                    <div className='test_section' style={{ backgroundColor: "white" }}>
                         <h3 className='text-center header-title'>Test Case Management Tools</h3>
                         <div className='test_web_body'>
                             <Grid container spacing={{ xs: 2, sm: 2, md: 3 }} columns={{ xs: 4, sm: 12, md: 12 }}>
@@ -611,10 +640,10 @@ const Service = () => {
 
                     </div>
 
-                    
+
 
                     {/* Software Development Methedology */}
-                    <div className='test_section' style={{backgroundColor:"white"}}>
+                    <div className='test_section' style={{ backgroundColor: "white" }}>
                         <h3 className='text-center header-title'>Software Development Methedology</h3>
                         <div className='test_web_body'>
                             <Grid container spacing={{ xs: 2, sm: 2, md: 3 }} columns={{ xs: 4, sm: 12, md: 12 }}>

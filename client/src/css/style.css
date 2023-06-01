@@ -5320,6 +5320,9 @@ body::-webkit-scrollbar-thumb:hover {
     /* transition: 0.8s ease-in-out;
     -webkit-transition:  1s; */
 }
+.contact_input:focus{
+    border: 2px solid rgb(247,112,98)!important;
+}
 
 /*17/5/2023 -shuvo */
 .appbar_link li {

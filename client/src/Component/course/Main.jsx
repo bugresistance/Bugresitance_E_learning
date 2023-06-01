@@ -224,9 +224,6 @@ function Main() {
                         backgroundColor: "#5C2CC5",
                         color: "white",
                       },
-                     
-                      
-
                     }}
                     value={value}
                     onChange={handleChange}
@@ -384,7 +381,7 @@ function Main() {
                         </div>
                         <div className="insturctor__details">
                           <p>
-                            ${ins.content}
+                            {ins.content}
                           </p>
                         </div>
                       </div>
