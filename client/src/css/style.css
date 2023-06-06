@@ -4239,6 +4239,13 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: #fbfbff;
     color: rgb(59, 24, 139);
 }
+#contact-me .form-area textarea{
+    position: relative;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: #fbfbff;
+    color: rgb(59, 24, 139);
+}
 #contact-me .form-area .input-area img {
     position: absolute;
     right: 30px;
@@ -4282,7 +4289,7 @@ body::-webkit-scrollbar-thumb:hover {
 #contact-me .contact-info-area .contact-area {
     border-radius: 100px;
     background-color: rgb(251, 251, 255);
-    padding:100px;
+    padding:60px;
 }
 #contact-me .contact-info-area .contact-area .contact-header{
     margin-bottom: 32px;

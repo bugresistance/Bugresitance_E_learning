@@ -132,17 +132,33 @@ const NavbarTop = () => {
       setVisible(false)
     }
   };
+  const handleNavbarClick = () => {
 
+      window.scrollTo({ top: 0, behavior: 'smooth' });
 
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
   };
+
+
+  var count = 0
+  const toggleDropdown = (value) => {
+    if(value==='tab'){
+      count = count + 1
+      setDropdownOpen(dropdownOpen)
+    }else{
+      if(count===1){
+        count = 0
+      }else{
+        setDropdownOpen(!dropdownOpen);
+      }
+    }
+    
+  };
+
   const logOut = () => {
     localStorage.removeItem('userData')
     localStorage.removeItem('jwtoken')
     window.location.reload()
   }
-
 
   window.addEventListener('scroll', toggleVisible);
   return (
@@ -154,7 +170,7 @@ const NavbarTop = () => {
             <div class="row d-flex header-area">
 
               <Navbar className='navbar p-0' light expand="md">
-                <div class="logo-section flex-grow-1 d-flex align-items-center">
+                <div class="logo-section flex-grow-1 d-flex align-items-center" onClick={handleNavbarClick}>
                   <Link class="site-logo site-title" to='/'><img src={logo} alt="site-logo" /></Link>
                   <h6 style={{ color: "white", marginLeft: "15px" }}>BUG RESISTANCE</h6>
                 </div>
@@ -162,9 +178,9 @@ const NavbarTop = () => {
                 <Collapse isOpen={isOpen} navbar>
                   <Nav className="mr-auto navbar-collapsed"  navbar>
                     <ul class="navbar-nav main-menu ml-auto" >
-                      <li className='visible-list' ><Link to="/">Home</Link></li>
+                      <li className='visible-list' onClick={handleNavbarClick}><Link to="/">Home</Link></li>
                       {/* <li className='visible-list' ><Link to="/Bug_resistance_eLearning/">About</Link></li> */}
-                      <li className='visible-list' ><Link to="/courseadmission">Course Admission</Link></li>
+                      <li className='visible-list' onClick={handleNavbarClick}><Link to="/courseadmission">Course Admission</Link></li>
                       {/* <li className='visible-list' ><Link to="/Bug_resistance_eLearning/" >Career-Blog</Link></li> */}
                       {/* <li className='visible-list'> */}
                       {/* <Dropdown className='visible-list' nav inNavbar isOpen={dropdownOpen}   toggle={toggleDropdown} onClick={toggleDropdown} onMouseLeave={toggleDropdown}> */}
@@ -204,8 +220,10 @@ const NavbarTop = () => {
                                 variant="fullWidth"
                                 aria-label="full width tabs example"
                               >
-                                <Tab className='tab__header_name' sx={{".MuiButtonBase-root": {fontSize: "16px"}}} label="Standard QA Services" {...a11yProps(0)} />
-                                <Tab label="Specialized QA Services" {...a11yProps(1)} />
+                                <Tab className='tab__header_name' sx={{".MuiButtonBase-root": {fontSize: "16px"}}} label="Standard QA Services" {...a11yProps(0)} onClick={(e)=>{toggleDropdown('tab')
+                                }}/>
+                                <Tab label="Specialized QA Services" {...a11yProps(1)} onClick={(e)=>{toggleDropdown('tab')
+                                }}/>
                               </Tabs>
                             </AppBar>
  {/* tab panel one */}
@@ -372,7 +390,7 @@ const NavbarTop = () => {
                       {/* </li> */}
 
 
-                      <li className='visible-list' ><Link to="/contact">Contact</Link></li>
+                      <li className='visible-list' onClick={handleNavbarClick}><Link to="/contact">Contact</Link></li>
                       {/* <li className='visible-list' ><Link to="/form">Admission Form</Link></li> */}
                     
                       {localStorage.getItem('userData') && <li className='visible-list' ><Link to="/addslide">Panel</Link></li>}

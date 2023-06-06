@@ -530,7 +530,7 @@ const Service = () => {
                                     <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                         <Card sx={{ height: "170px" }}>
                                             <CardContent>
-                                                <img src={testrail} className='img-fluid' />
+                                                <img src={testrail} className='img-fluid'  />
                                             </CardContent>
                                         </Card>
                                     </div>
@@ -541,7 +541,7 @@ const Service = () => {
                                     <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                         <Card sx={{ height: "170px" }}>
                                             <CardContent>
-                                                <img src={jira} className='img-fluid' style={{ width: '512px', height: '200px' }} />
+                                                <img src={jira} className='img-fluid' style={{ width: '512px', height: '200px'}} />
                                             </CardContent>
                                         </Card>
                                     </div>
@@ -639,7 +639,6 @@ const Service = () => {
                         </div>
 
                     </div>
-
 
 
                     {/* Software Development Methedology */}

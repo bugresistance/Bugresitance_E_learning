@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import emailjs from 'emailjs-com';
 import Footer from './Shared/Footer'
 import NavbarTop from './Shared/NavbarTop'
@@ -13,10 +13,27 @@ import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 const Contact = () => {
-    const sendEmail = (e) => {
-        console.log(email);
-        if (email.name === '' || email.email_address === '' || email.mobile_number === '' || email.company_name === '') {
-            toast('Fill All Mandatory Fields', {
+    const [isValidate, setIsValidate] = useState(true)
+    const commonToast = (field) => {
+        toast(`${field} field is empty`, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        });
+    }
+
+    const middleWare = () => {
+        const mobileRegex = /^\+?(88)?0?1[3456789][0-9]{8}\b/g
+        const emailRegex = /^[a-z0-9._-]+@([a-z0-9-]+\.)+[a-z]{2,4}$/g
+        const nameRegex = /^[A-Za-z.\s]{2,30}$/g
+
+        if (!nameRegex.test(email.name.trim())) {
+            toast(`Invalid Name`, {
                 position: "top-center",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -26,41 +43,94 @@ const Contact = () => {
                 progress: undefined,
                 theme: "light",
             });
-        } else {
-            emailjs.send('service_mn6abii', 'template_3mt0t7x', email, 'C3e8qnnijH6kNCCgk')
-                .then(function () {
-                    console.log('SUCCESS!');
-                    toast('Email Submitted Successfully', {
-                        position: "top-center",
-                        autoClose: 5000,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                        theme: "light",
+            return true
+        }
+        else if (!emailRegex.test(email.email_address.trim())) {
+            toast(`Invalid Email Address`, {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            });
+            return true
+        }
+        else if (!mobileRegex.test(email.mobile_number.trim())) {
+            toast(`Invalid Phone Number`, {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            });
+            return true
+        }
+
+
+        return false
+    }
+
+    const sendEmail = (e) => {
+        // const isValidationError = middleWare()
+        // console.log("before",email);
+        if (email.name.trim() === '') {
+            commonToast('Name')
+        } else if (email.email_address.trim() === '') {
+            commonToast('Email')
+        }
+        else if (email.mobile_number.trim() === '') {
+            commonToast('Mobile Number')
+        }
+        else if (email.company_name.trim() === '') {
+            commonToast('Company Name')
+        }
+        else {
+            if (middleWare()) {
+                // console.log("Entered Error");
+                return
+            } else {
+                
+                emailjs.send('service_4og0lz8', 'template_qwdecog', email, 'OhnRrYONM1hMebI47')
+                    .then(function () {
+                        console.log('SUCCESS!');
+                        toast('Email Submitted Successfully', {
+                            position: "top-center",
+                            autoClose: 5000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "light",
+                        });
+                        setEmail({
+                            name: "",
+                            project_description: "",
+                            email_address: "",
+                            mobile_number: "",
+                            company_name: "",
+                            file: ""
+                        })
+                    }, function (error) {
+                        toast('Email Not Sent', {
+                            position: "top-center",
+                            autoClose: 5000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "light",
+                        });
+                        console.log('FAILED...', error);
                     });
-                    setEmail({
-                        name: "",
-                        project_description: "",
-                        email_address: "",
-                        mobile_number: "",
-                        company_name: "",
-                        file: ""
-                    })
-                }, function (error) {
-                    toast('Email Not Sent', {
-                        position: "top-center",
-                        autoClose: 5000,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                        theme: "light",
-                    });
-                    console.log('FAILED...', error);
-                });
+            }
         }
 
     }
@@ -81,7 +151,7 @@ const Contact = () => {
     }
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+    }, [])
     return (
         <div>
             <NavbarTop />
@@ -134,7 +204,7 @@ const Contact = () => {
                                                             <img src={userIcon} alt="image" />
                                                         </div>
                                                         <div class="input-area">
-                                                            <input  className='contact_input' type="text" placeholder="Email Address *" name="email_address" value={email.email_address} onChange={(e) => { handleValue(e) }
+                                                            <input className='contact_input' type="text" placeholder="Email Address *" name="email_address" value={email.email_address} onChange={(e) => { handleValue(e) }
                                                             } />
                                                             <img src={emailIcon} alt="image" />
                                                         </div>
@@ -149,12 +219,12 @@ const Contact = () => {
                                                             <img src={companyIcon} alt="image" />
                                                         </div>
                                                         <div class="input-area" style={{ display: 'flex' }}>
-                                                            <input className='contact_input' type="text" placeholder="Project Description" name="project_description" value={email.project_description} onChange={(e) => { handleValue(e) }
+                                                            <textarea className='contact_input' type="text" rows="4" cols="50" placeholder="Project Description" name="project_description" value={email.project_description} onChange={(e) => { handleValue(e) }
                                                             } />
-                                                            <IconButton color="primary" aria-label="upload picture" component="label" sx={{ marginRight: "20px", marginTop: "6px" }}>
+                                                            {/* <IconButton color="primary" aria-label="upload picture" component="label" sx={{ marginRight: "20px", marginTop: "6px" }}>
                                                                 <input hidden accept="xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" type="file" onChange={(e) => { setEmail({ ...email, file: e.target.files[0] }) }} />
                                                                 <PhotoCameraIcon />
-                                                            </IconButton>
+                                                            </IconButton> */}
 
                                                         </div>
 
