@@ -124,9 +124,9 @@ function Main() {
       }
 
   }
-  useLayoutEffect(() => {
-      getData()
-  }, [])
+  // useLayoutEffect(() => {
+  //     getData()
+  // }, [])
 
   useLayoutEffect(()=> {
     if(imgLoad){
@@ -198,7 +198,7 @@ function Main() {
               <div>
                 <div className="gutter__div"></div>
                 <aside className="course_side_content">
-                  <CouresMaterial time={time}/>
+                  <CouresMaterial time="9th Batch will start from: 13th June,2023."/>
                 </aside>
               </div>
             )}

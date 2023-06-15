@@ -13,7 +13,6 @@ import { ArrowRight } from '@mui/icons-material';
 
 import testrail from '../../images/testrail.png'
 import jira from '../../images/jira.png'
-import redmine from '../../images/redmine.png'
 import clickup from '../../images/clickup.png'
 import jama from '../../images/jama.png'
 import Trello from '../../images/trello.png'
