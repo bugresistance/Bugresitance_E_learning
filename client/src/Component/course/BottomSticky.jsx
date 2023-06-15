@@ -15,6 +15,7 @@ const BottomSticky = () => {
                     </div>
                 </div> 
   )
+  
 }
 
 export default BottomSticky
