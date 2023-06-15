@@ -34,7 +34,7 @@ const JobSlide = () => {
             .then(res => res.json())
             .then(data => {
                 setUrl(data.url)
-                fetch(`http://localhost:4000/addslider`, {
+                fetch(`${process.env.REACT_APP_URL}/addslider`, {
                     method: "post",
                     body: JSON.stringify({
                         say: info.say,

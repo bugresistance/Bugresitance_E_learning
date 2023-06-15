@@ -33,7 +33,7 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
   textAlign: 'center',
   color: theme.palette.text.secondary,
-  
+
 }));
 
 
@@ -50,7 +50,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3,  }}>
+        <Box sx={{ p: 3, }}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -91,7 +91,7 @@ const NavbarTop = () => {
         {...other}
       >
         {value === index && (
-          <Box sx={{ padding: "1rem 0" , display: "flex", justifyContent: "space-around", alignItems: "center", '@media (max-width: 768px)': {padding: "4rem 0"}}}>
+          <Box sx={{ padding: "1rem 0", display: "flex", justifyContent: "space-around", alignItems: "center", '@media (max-width: 768px)': { padding: "4rem 0" } }}>
             <Box>{children}</Box>
           </Box>
         )}
@@ -133,25 +133,23 @@ const NavbarTop = () => {
     }
   };
   const handleNavbarClick = () => {
-
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
 
   var count = 0
   const toggleDropdown = (value) => {
-    if(value==='tab'){
+    if (value === 'tab') {
       count = count + 1
       setDropdownOpen(dropdownOpen)
-    }else{
-      if(count===1){
+    } else {
+      if (count === 1) {
         count = 0
-      }else{
+      } else {
         setDropdownOpen(!dropdownOpen);
       }
     }
-    
+
   };
 
   const logOut = () => {
@@ -176,8 +174,8 @@ const NavbarTop = () => {
                 </div>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                  <Nav className="mr-auto navbar-collapsed"  navbar>
-                    <ul class="navbar-nav main-menu ml-auto" >
+                  <Nav className="mr-auto navbar-collapsed" navbar style={{width:"100%"}}>
+                    <ul class="navbar-nav main-menu ml-auto"  style={{width:"100%"}}>
                       <li className='visible-list' onClick={handleNavbarClick}><Link to="/">Home</Link></li>
                       {/* <li className='visible-list' ><Link to="/Bug_resistance_eLearning/">About</Link></li> */}
                       <li className='visible-list' onClick={handleNavbarClick}><Link to="/courseadmission">Course Admission</Link></li>
@@ -190,18 +188,18 @@ const NavbarTop = () => {
                         <DropdownToggle nav >
                           Services
                         </DropdownToggle>
-                        <DropdownMenu right style={{ top: "100%",}}  className="custom-dropdown-menu" id='c_d_m'>
-                          <div className="triangle"></div> 
-                          <Box sx={{ 
-                            bgcolor: 'background.paper', width: 700, 
-                            '@media (max-width: 991px) ': {width: 500,} ,
-                            '@media (max-width: 768px)': {width: "100%", height: "400px", overflow: "scroll", overflowX: "hidden",},
-                            
-                            }} className='nav__box' >
+                        <DropdownMenu right style={{ top: "100%", }} className="custom-dropdown-menu" id='c_d_m'>
+                          <div className="triangle"></div>
+                          <Box sx={{
+                            bgcolor: 'background.paper', width: 700,
+                            '@media (max-width: 991px) ': { width: 500, },
+                            '@media (max-width: 768px)': { width: "100%", height: "400px", overflow: "scroll", overflowX: "hidden", },
+
+                          }} className='nav__box' >
                             <AppBar position="static" className='appbar_link' sx={{
                               '@media (max-width: 768px)': {
                                 position: "fixed",
-                                
+
                                 zIndex: 100
                               }
                             }}>
@@ -214,73 +212,69 @@ const NavbarTop = () => {
                                 }}
                                 sx={{
                                   "& button.Mui-selected": { color: "#F23460" },
-                                  ".MuiButtonBase-root": {fontSize: "16px", fontWeight: "500", fontFamily: "Poppins", lineHeight: "24px", color: "#15033E"}
+                                  ".MuiButtonBase-root": { fontSize: "16px", fontWeight: "500", fontFamily: "Poppins", lineHeight: "24px", color: "#15033E" }
                                 }}
                                 textColor="inherit"
                                 variant="fullWidth"
                                 aria-label="full width tabs example"
                               >
-                                <Tab className='tab__header_name' sx={{".MuiButtonBase-root": {fontSize: "16px"}}} label="Standard QA Services" {...a11yProps(0)} onClick={(e)=>{toggleDropdown('tab')
-                                }}/>
-                                <Tab label="Specialized QA Services" {...a11yProps(1)} onClick={(e)=>{toggleDropdown('tab')
-                                }}/>
+                                <Tab className='tab__header_name' sx={{ ".MuiButtonBase-root": { fontSize: "16px" } }} label="Standard QA Services" {...a11yProps(0)} onClick={(e) => {
+                                  toggleDropdown('tab')
+                                }} />
+                                <Tab label="Specialized QA Services" {...a11yProps(1)} onClick={(e) => {
+                                  toggleDropdown('tab')
+                                }} />
                               </Tabs>
                             </AppBar>
- {/* tab panel one */}
+                            {/* tab panel one */}
                             <TabPanel value={value} index={0} dir={theme.direction}  >
-                              <Grid container  sx={{"@media (max-width:768px)": {".MuiGrid-spacing-xs-2": {},} }} className='grid__link' >
-                                <Grid xs={12} sm={6} className='left__grid_1' sx={{"@media (max-width:768px)": {display: "flex", flexDirection: "column"}}} >
+                              <Grid container sx={{ "@media (max-width:768px)": { ".MuiGrid-spacing-xs-2": {}, } }} className='grid__link' >
+                                <Grid xs={12} sm={6} className='left__grid_1' sx={{ "@media (max-width:768px)": { display: "flex", flexDirection: "column" }, width: "300px" }} >
                                   {/* <p className='dropdown__services__header' style={{ color: "#F23460" }}>Manual Testing Services</p> */}
-                                  <Item elevation={'0'} sx={{ textAlign: "left" , '@media (max-width: 768px)': {display: "flex", justifyContent: "center"}}}  >
+                                  <Item elevation={'0'} sx={{ textAlign: "left", '@media (max-width: 768px)': { display: "flex", justifyContent: "flex-start" } }}  >
                                     <ul className='qa_services_left' style={{ color: "black" }} >
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' id='grid__link__item' style={{ color: "black" }}  >Manual Testing Services</Link>
+                                        <Link to='/service/manualtesting' className='grid__link_item' id='grid__link__item' style={{ color: "black" }}  >Manual Testing</Link>
                                       </li>
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}  >Functional Testing Services</Link>
+                                        <Link to='/service/mobiletesting' className='grid__link_item' style={{ color: "black" }}  >Mobile Testing</Link>
                                       </li>
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Compatibility Testing Services</Link>
+                                        <Link to='/service/webtesting' className='grid__link_item' style={{ color: "black" }}>Web App Testing</Link>
                                       </li>
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>User Acceptance Testing Services</Link>
+                                        <Link to='/service/regressiontesting' className='grid__link_item' style={{ color: "black" }}>Regression Testing</Link>
                                       </li>
                                     </ul>
                                   </Item>
                                 </Grid>
-                                <Grid xs={12} sm={6} className='right__grid_1'  >
+                                <Grid xs={12} sm={6} className='right__grid_1' sx={{ width: '300px' }} >
                                   {/* <div>Manual Testing</div> */}
-                                  <Item elevation={'0'} sx={{ textAlign: "left", '@media (max-width: 768px)': {display: "flex", justifyContent: "center"} }} >
+                                  <Item elevation={'0'} sx={{ textAlign: "left", '@media (max-width: 768px)': { display: "flex", justifyContent: "flex-start" } }} >
                                     <ul className='qa_services_right'>
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
 
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Mobile Testing Services</Link>
+                                        <Link to='/service/apitesting' className='grid__link_item' style={{ color: "black" }}>API Testing</Link>
                                       </li >
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
 
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Web Testing Services</Link>
+                                        <Link to='/service/databasetesting' className='grid__link_item' style={{ color: "black" }}>Database Testing</Link>
                                       </li>
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
 
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Game Testing Services</Link>
+                                        <Link to='/service/desktoptesting' className='grid__link_item' style={{ color: "black" }}>Desktop App Testing</Link>
                                       </li>
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
 
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Regression Testing Services</Link>
-                                      </li>
-
-                                      <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Usability Testing Services</Link>
+                                        <Link to='/service/usabilitytesting' className='grid__link_item' style={{ color: "black" }}>Usability Testing</Link>
                                       </li>
                                     </ul>
                                   </Item>
@@ -290,90 +284,59 @@ const NavbarTop = () => {
                               </Grid>
                             </TabPanel>
                             <TabPanel value={value} index={1} dir={theme.direction}>
-                              <Grid container  className='grid__link'>
-                                <Grid xs={12} sm={6} className='left__grid_1' >
-                                  <Item elevation={'0'} sx={{ textAlign: "left", '@media (max-width: 768px)': {display: "flex", justifyContent: "center"} }} >
+                              <Grid container className='grid__link'>
+                                <Grid xs={12} sm={6} className='left__grid_1' sx={{ width: "350px" }}>
+                                  <Item elevation={'0'} sx={{ textAlign: "left", '@media (max-width: 768px)': { display: "flex", justifyContent: "flex-start" } }} >
                                     <ul className='qa_services_left' style={{ color: "black" }} >
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}  >Automation Testing Services</Link>
+                                        <Link to='/service/automationtesting' className='grid__link_item' style={{ color: "black" }}  >Automation Testing</Link>
                                       </li>
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}  >Mobile Test Automation Services</Link>
+                                        <Link to='/service/securitytesting' className='grid__link_item' style={{ color: "black" }}  >Security Testing </Link>
                                       </li>
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Web Test Automation Services</Link>
+                                        <Link to='/service/bigdatatesting' className='grid__link_item' style={{ color: "black" }}>Big Data Testing</Link>
                                       </li>
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Selenium Testing Service</Link>
+                                        <Link to='/service/cloudtesting' className='grid__link_item' style={{ color: "black" }}>Cloud Testing</Link>
                                       </li>
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Security Testing Services</Link>
-                                      </li>
-                                      <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Big Data Testing Services</Link>
-                                      </li>
-                                      <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Cloud Testing Services</Link>
-                                      </li>
-                                      <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Agile And DevOps Testing Services</Link>
-                                      </li>
-                                      <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Compliance With GDPR</Link>
+                                        <Link to='/service/erptesting' className='grid__link_item' style={{ color: "black" }}>ERP Testing</Link>
                                       </li>
                                     </ul>
                                   </Item>
-                                  
+
 
                                 </Grid>
                                 <Grid xs={12} sm={6} className='right__grid_1'>
                                   {/* <div>Manual Testing</div> */}
-                                  <Item elevation={'0'} sx={{ textAlign: "left", '@media (max-width: 768px)': {display: "flex", justifyContent: "center"}}} >
-                                  <ul className='qa_services_right qa_2' style={{ color: "black" }} >
+                                  <Item elevation={'0'} sx={{ textAlign: "left", '@media (max-width: 768px)': { display: "flex", justifyContent: "flex-start" } }} >
+                                    <ul className='qa_services_right qa_2' style={{ color: "black" }} >
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}  >ERP Testing Services</Link>
+                                        <Link to='/service/loadtesting' className='grid__link_item' style={{ color: "black" }}  >Load Testing</Link>
                                       </li>
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}  >CRM Testing Services</Link>
+                                        <Link to='/service/iottesting' className='grid__link_item' style={{ color: "black" }}  >IOT Testing
+                                        </Link>
                                       </li>
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>SAP Testing Services</Link>
+                                        <Link to='/service/blockchaintesting' className='grid__link_item' style={{ color: "black" }}>Blockchain Testing</Link>
                                       </li>
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Performance Testing Services</Link>
+                                        <Link to='/service/altesting' className='grid__link_item' style={{ color: "black" }}>AL & ML Testing</Link>
                                       </li>
                                       <li className='item' >
                                         <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Jmeter Testing</Link>
-                                      </li>
-                                      <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>IoT Testing Services</Link>
-                                      </li>
-                                      <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Salesforce Testing Services</Link>
-                                      </li>
-                                      <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>Blockchain Testing Services</Link>
-                                      </li>
-                                      <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
-                                        <Link to='/service' className='grid__link_item' style={{ color: "black" }}>AI & ML Testing Services</Link>
+                                        <Link to='/service/globalizationtesting' className='grid__link_item' style={{ color: "black" }}>Globalization Testing</Link>
                                       </li>
                                     </ul>
                                   </Item>
@@ -392,7 +355,7 @@ const NavbarTop = () => {
 
                       <li className='visible-list' onClick={handleNavbarClick}><Link to="/contact">Contact</Link></li>
                       {/* <li className='visible-list' ><Link to="/form">Admission Form</Link></li> */}
-                    
+
                       {localStorage.getItem('userData') && <li className='visible-list' ><Link to="/addslide">Panel</Link></li>}
                       {localStorage.getItem('userData') && <li className='visible-list' ><Link to="" onClick={() => { logOut() }}>Logout</Link></li>}
 

@@ -119,6 +119,13 @@
     width:100%
 }
 
+.card_content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 1000px) {
     .banner_image {
         width: 100%;
