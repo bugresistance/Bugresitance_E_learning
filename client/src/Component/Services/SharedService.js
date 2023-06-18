@@ -11,11 +11,11 @@ import Typography from '@mui/material/Typography';
 import Badge from '@mui/material/Badge';
 import { ArrowRight } from '@mui/icons-material';
 
-import testrail from '../../images/testrail.png'
+import testrail from '../../images/TestRail.png'
 import jira from '../../images/jira.png'
 import clickup from '../../images/clickup.png'
 import jama from '../../images/jama.png'
-import Trello from '../../images/trello.png'
+import Trello from '../../images/Trello.png'
 import kanban from '../../images/kanban.png'
 import zephyr from '../../images/zephyr.png'
 import bugzilla from '../../images/bugzilla.png'
