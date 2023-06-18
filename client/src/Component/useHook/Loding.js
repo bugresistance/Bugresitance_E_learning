@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import logo from '../../images/Main.png'
+import logo from '../../image/Main.png'
 const Loding = () => {
   return (
     <div style={{width:"100vw",height:"100vh",display:"flex",justifyContent:"center",alignItems:"center"}}>

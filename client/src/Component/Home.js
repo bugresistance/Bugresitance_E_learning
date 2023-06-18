@@ -1,18 +1,18 @@
 import React, { useContext, useState, useEffect } from 'react'
 
 
-// Importing Images
-import banner from '../images/banner-circle.png'
-import downloadCV from '../images/download-Icon.png'
-import specializingIcon1 from '../images/specilizing-icon1.png'
-import specializingIcon2 from '../images/specilizing-icon2.png'
-import specializingIcon3 from '../images/specilizing-icon3.png'
-import specializingIcon4 from '../images/specilizing-icon4.png'
-import turn from '../images/now-your-turn-right.png'
-import monkeytest from '../images/Monkey Testing.png'
-import regressiontesting from '../images/regression testing.png'
-import selenium from '../images/selenium.png'
-import smoketesting from '../images/Smoke testing.png'
+// Importing image
+import banner from '../image/banner-circle.png'
+import downloadCV from '../image/download-Icon.png'
+import specializingIcon1 from '../image/specilizing-icon1.png'
+import specializingIcon2 from '../image/specilizing-icon2.png'
+import specializingIcon3 from '../image/specilizing-icon3.png'
+import specializingIcon4 from '../image/specilizing-icon4.png'
+import turn from '../image/now-your-turn-right.png'
+import monkeytest from '../image/Monkey Testing.png'
+import regressiontesting from '../image/regression testing.png'
+import selenium from '../image/selenium.png'
+import smoketesting from '../image/Smoke testing.png'
 
 import StudentBig from './StudentBig'
 import Footer from './Shared/Footer'

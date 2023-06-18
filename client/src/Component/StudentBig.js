@@ -7,9 +7,9 @@ import { Avatar } from '@mui/material';
 import Box from '@mui/material/Box';
 import CardActions from '@mui/material/CardActions';
 
-import student from '../images/Latif.jpg'
-import invertedcomma from '../images/invertedcomma.png'
-import latif from '../images/Latifur Rahman.jpg'
+import student from '../image/Latif.jpg'
+import invertedcomma from '../image/invertedcomma.png'
+import latif from '../image/Latifur Rahman.jpg'
 
 import CardSlider from './CardSlider';
 

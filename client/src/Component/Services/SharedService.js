@@ -11,26 +11,26 @@ import Typography from '@mui/material/Typography';
 import Badge from '@mui/material/Badge';
 import { ArrowRight } from '@mui/icons-material';
 
-import testrail from '../../images/TestRail.png'
-import jira from '../../images/jira.png'
-import clickup from '../../images/clickup.png'
-import jama from '../../images/jama.png'
-import Trello from '../../images/Trello.png'
-import kanban from '../../images/kanban.png'
-import zephyr from '../../images/zephyr.png'
-import bugzilla from '../../images/bugzilla.png'
-import agile from '../../images/agile.png'
-import devops from '../../images/devops.png'
+import testrail from '../../image/TestRail.png'
+import jira from '../../image/jira.png'
+import clickup from '../../image/clickup.png'
+import jama from '../../image/jama.png'
+import Trello from '../../image/Trello.png'
+import kanban from '../../image/kanban.png'
+import zephyr from '../../image/zephyr.png'
+import bugzilla from '../../image/bugzilla.png'
+import agile from '../../image/agile.png'
+import devops from '../../image/devops.png'
 
-import s1 from '../../images/s1_Healthcare.png'
-import s2 from '../../images/s2_EduTech.png'
-import s3 from '../../images/S3_Travel.png'
-import s4 from '../../images/s4_Business.png'
-import s5 from '../../images/s5_ecommerce.png'
-import s6 from '../../images/s6_B2B.png'
-import s7 from '../../images/s7_Software_Development.png'
+import s1 from '../../image/s1_Healthcare.png'
+import s2 from '../../image/s2_EduTech.png'
+import s3 from '../../image/S3_Travel.png'
+import s4 from '../../image/s4_Business.png'
+import s5 from '../../image/s5_ecommerce.png'
+import s6 from '../../image/s6_B2B.png'
+import s7 from '../../image/s7_Software_Development.png'
 
-import tick from '../../images/tick.png'
+import tick from '../../image/tick.png'
 
 const contents = [
     {
@@ -157,7 +157,7 @@ const SharedService = ({size,handleChange,expanded}) => {
                         <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
                             <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                 {/* <FontAwesomeIcon icon={faDisplay} size="4x" /> */}
-                                <img src={'../../images/tick.png'} style={{ height: "40px", width: "40px" }} />
+                                <img src={'../../image/tick.png'} style={{ height: "40px", width: "40px" }} />
                                 <p style={{ marginLeft: "15px" }}>Websites </p>
                             </div>
 

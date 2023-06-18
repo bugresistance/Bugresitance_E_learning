@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react'
 
 import NavbarTop from '../Shared/NavbarTop'
-// import servicebanner from '../../images/servicebanner.png'
+// import servicebanner from '../../image/servicebanner.png'
 
 import Footer from '../Shared/Footer';
 import SharedService from './SharedService';

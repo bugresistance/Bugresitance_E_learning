@@ -1,12 +1,12 @@
 import React from 'react'
 
 import Slider from "react-slick";
-import userImg from "../../images/userimg.jpg"
-import dibya from "../../images/Dibya_Nath.jpg"
-import malik from "../../images/Mallik_Galib_Shahriar.jpg"
-import partho from "../../images/Partho_Debnath.jpg"
-import rafi from "../../images/Rafi_SH.jpg"
-import girl from "../../images/Girl_Common.jpg"
+import userImg from "../../image/userimg.jpg"
+import dibya from "../../image/Dibya_Nath.jpg"
+import malik from "../../image/Mallik_Galib_Shahriar.jpg"
+import partho from "../../image/Partho_Debnath.jpg"
+import rafi from "../../image/Rafi_SH.jpg"
+import girl from "../../image/Girl_Common.jpg"
 
 
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';

@@ -5,10 +5,10 @@ import Footer from './Shared/Footer'
 import NavbarTop from './Shared/NavbarTop'
 import { Button, IconButton } from '@mui/material'
 import PhotoCameraIcon from '@mui/icons-material/PhotoCamera';
-import userIcon from '../images/user-icon.png'
-import emailIcon from '../images/email-icon2.png'
-import mobileIcon from '../images/mobile.png'
-import companyIcon from '../images/company.png'
+import userIcon from '../image/user-icon.png'
+import emailIcon from '../image/email-icon2.png'
+import mobileIcon from '../image/mobile.png'
+import companyIcon from '../image/company.png'
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 const AdmissionForm = () => {

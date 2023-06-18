@@ -1,6 +1,6 @@
 // import "./App.css";
 import React, { useEffect, useState } from "react";
-import topImage from "../../images/top_image.jpg";
+import topImage from "../../image/top_image.jpg";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -16,9 +16,9 @@ import CouresMaterial from "./CouresMaterial";
 import BottomSticky from "./BottomSticky";
 import Footer from '../Shared/Footer'
 // import "bootstrap/dist/css/bootstrap.min.css"
-import oneImg from "../../images/Fahim Hasan.jpg"
-import secondImage from '../../images/Makid Hyder.jpg'
-import thirdImage from '../../images/Mohoshi Haque.jpg'
+import oneImg from "../../image/Fahim Hasan.jpg"
+import secondImage from '../../image/Makid Hyder.jpg'
+import thirdImage from '../../image/Mohoshi Haque.jpg'
 import NavbarTop from "../Shared/NavbarTop";
 import { Avatar } from "@mui/material";
 import { useLayoutEffect } from "react";

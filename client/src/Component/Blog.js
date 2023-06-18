@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
 import NavbarTop from './Shared/NavbarTop'
 
-// importing images
-import blog1 from '../images/blog-img1.png'
-import blog2 from '../images/blog-img2.png'
-import blog3 from '../images/blog-img3.png'
-import blog4 from '../images/blog-img4.png'
-import blog5 from '../images/blog-img5.png'
-import leftArrow from '../images/arrow-left.png'
-import rightArrow from '../images/arrow-right.png'
-import featured1 from '../images/featured-img1.png'
-import featured2 from '../images/featured-img2.png'
-import featured3 from '../images/featured-img3.png'
-import productservicebg from '../images/view-product-bg.png'
-import productserviceicon from '../images/view-product-icon.png'
+// importing image
+import blog1 from '../image/blog-img1.png'
+import blog2 from '../image/blog-img2.png'
+import blog3 from '../image/blog-img3.png'
+import blog4 from '../image/blog-img4.png'
+import blog5 from '../image/blog-img5.png'
+import leftArrow from '../image/arrow-left.png'
+import rightArrow from '../image/arrow-right.png'
+import featured1 from '../image/featured-img1.png'
+import featured2 from '../image/featured-img2.png'
+import featured3 from '../image/featured-img3.png'
+import productservicebg from '../image/view-product-bg.png'
+import productserviceicon from '../image/view-product-icon.png'
 import { Tab, Tabs } from '@mui/material'
 
 const Blog = () => {
@@ -200,14 +200,14 @@ const Blog = () => {
                                     <div class="single-item flex-item mb-30">
                                         <div class="image-area">
                                             <span>New</span>
-                                            <img src="images/blog-img1.png" class="blog-item" alt="image"/>
+                                            <img src="image/blog-img1.png" class="blog-item" alt="image"/>
                                             <div class="icon">
-                                                <img src="images/design-icon.png" alt="image"/>
+                                                <img src="image/design-icon.png" alt="image"/>
                                             </div>
                                         </div>
                                         <div class="text-item">
                                             <div class="date-area">
-                                                <img src="images/date-icon.png" alt="image"/>
+                                                <img src="image/date-icon.png" alt="image"/>
                                                 <span class="date">Sep 15, 2020</span>
                                                 <span>In Design</span>
                                             </div>
@@ -221,14 +221,14 @@ const Blog = () => {
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="single-item mb-30">
                                         <div class="image-area">
-                                            <img src="images/blog-img4.png" class="blog-item" alt="image"/>
+                                            <img src="image/blog-img4.png" class="blog-item" alt="image"/>
                                             <div class="icon">
-                                                <img src="images/design-icon.png" alt="image"/>
+                                                <img src="image/design-icon.png" alt="image"/>
                                             </div>
                                         </div>
                                         <div class="text-item">
                                             <div class="date-area">
-                                                <img src="images/date-icon.png" alt="image"/>
+                                                <img src="image/date-icon.png" alt="image"/>
                                                 <span class="date">Sep 15, 2020</span>
                                                 <span>In Design</span>
                                             </div>
@@ -240,14 +240,14 @@ const Blog = () => {
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="single-item mb-30">
                                         <div class="image-area">
-                                            <img src="images/blog-img6.png" class="blog-item" alt="image"/>
+                                            <img src="image/blog-img6.png" class="blog-item" alt="image"/>
                                             <div class="icon">
-                                                <img src="images/design-icon.png" alt="image"/>
+                                                <img src="image/design-icon.png" alt="image"/>
                                             </div>
                                         </div>
                                         <div class="text-item">
                                             <div class="date-area">
-                                                <img src="images/date-icon.png" alt="image"/>
+                                                <img src="image/date-icon.png" alt="image"/>
                                                 <span class="date">Sep 15, 2020</span>
                                                 <span>In Design</span>
                                             </div>
@@ -263,14 +263,14 @@ const Blog = () => {
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="single-item mb-30">
                                         <div class="image-area">
-                                            <img src="images/blog-img2.png" class="blog-item" alt="image"/>
+                                            <img src="image/blog-img2.png" class="blog-item" alt="image"/>
                                             <div class="icon">
-                                                <img src="images/marketing-icon.png" alt="image"/>
+                                                <img src="image/marketing-icon.png" alt="image"/>
                                             </div>
                                         </div>
                                         <div class="text-item">
                                             <div class="date-area">
-                                                <img src="images/date-icon.png" alt="image"/>
+                                                <img src="image/date-icon.png" alt="image"/>
                                                 <span class="date">Sep 15, 2020</span>
                                                 <span>In Marketing</span>
                                             </div>
@@ -286,14 +286,14 @@ const Blog = () => {
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="single-item mb-30">
                                         <div class="image-area">
-                                            <img src="images/blog-img5.png" class="blog-item" alt="image"/>
+                                            <img src="image/blog-img5.png" class="blog-item" alt="image"/>
                                             <div class="icon">
-                                                <img src="images/development-icon.png" alt="image"/>
+                                                <img src="image/development-icon.png" alt="image"/>
                                             </div>
                                         </div>
                                         <div class="text-item">
                                             <div class="date-area">
-                                                <img src="images/date-icon.png" alt="image"/>
+                                                <img src="image/date-icon.png" alt="image"/>
                                                 <span class="date">Sep 15, 2020</span>
                                                 <span>In Development</span>
                                             </div>
@@ -305,14 +305,14 @@ const Blog = () => {
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="single-item mb-30">
                                         <div class="image-area">
-                                            <img src="images/blog-img7.png" class="blog-item" alt="image"/>
+                                            <img src="image/blog-img7.png" class="blog-item" alt="image"/>
                                             <div class="icon">
-                                                <img src="images/development-icon.png" alt="image"/>
+                                                <img src="image/development-icon.png" alt="image"/>
                                             </div>
                                         </div>
                                         <div class="text-item">
                                             <div class="date-area">
-                                                <img src="images/date-icon.png" alt="image"/>
+                                                <img src="image/date-icon.png" alt="image"/>
                                                 <span class="date">Sep 15, 2020</span>
                                                 <span>In Development</span>
                                             </div>
@@ -328,14 +328,14 @@ const Blog = () => {
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="single-item mb-30">
                                         <div class="image-area">
-                                            <img src="images/blog-img3.png" class="blog-item" alt="image"/>
+                                            <img src="image/blog-img3.png" class="blog-item" alt="image"/>
                                             <div class="icon">
-                                                <img src="images/tutorials-icon.png" alt="image"/>
+                                                <img src="image/tutorials-icon.png" alt="image"/>
                                             </div>
                                         </div>
                                         <div class="text-item">
                                             <div class="date-area">
-                                                <img src="images/date-icon.png" alt="image"/>
+                                                <img src="image/date-icon.png" alt="image"/>
                                                 <span class="date">Sep 15, 2020</span>
                                                 <span>In Tutorials</span>
                                             </div>

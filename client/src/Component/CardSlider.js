@@ -7,13 +7,13 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-import student from '../images/student.png'
-import invertedcomma from '../images/invertedcomma.png'
-import xin from '../images/Xin Akib Siddiquee.jpg'
-import saad from '../images/Saad Chowdhury.jpg'
-import nafiz from '../images/Nafiz Khan.jpg'
-import latif from '../images/Latifur Rahman.jpg'
-import hijab from '../images/Hijab.jpg'
+import student from '../image/student.png'
+import invertedcomma from '../image/invertedcomma.png'
+import xin from '../image/Xin Akib Siddiquee.jpg'
+import saad from '../image/Saad Chowdhury.jpg'
+import nafiz from '../image/Nafiz Khan.jpg'
+import latif from '../image/Latifur Rahman.jpg'
+import hijab from '../image/Hijab.jpg'
 
 import { Avatar } from '@mui/material';
 import { useEffect } from 'react';

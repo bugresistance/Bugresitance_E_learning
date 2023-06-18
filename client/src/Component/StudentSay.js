@@ -6,8 +6,8 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-import student from '../images/student.png'
-import invertedcomma from '../images/invertedcomma.png'
+import student from '../image/student.png'
+import invertedcomma from '../image/invertedcomma.png'
 import { Avatar } from '@mui/material';
 const StudentSay = () => {
 

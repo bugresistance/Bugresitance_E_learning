@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ScrollButton from './ScrollButton'
-import logo from '../../images/saimom_62.png'
+import logo from '../../image/saimom_62.png'
 
 const Footer = () => {
   return (

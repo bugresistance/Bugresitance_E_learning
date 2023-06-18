@@ -1,6 +1,6 @@
 import React from "react";
-import projectImg from "../../images/Project Icon.png";
-import cartImg from "../../images/Shopping-Cart.png";
+import projectImg from "../../image/Project Icon.png";
+import cartImg from "../../image/Shopping-Cart.png";
 
 import ModalImage from "react-modal-image";
 

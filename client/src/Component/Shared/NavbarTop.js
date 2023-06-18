@@ -18,7 +18,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { Paper, styled, Grid } from '@mui/material';
-import logo from '../../images/saimom_62.png'
+import logo from '../../image/saimom_62.png'
 import { Link } from 'react-router-dom'
 import BugReportIcon from '@mui/icons-material/BugReport';
 
