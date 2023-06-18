@@ -32,6 +32,7 @@ import s7 from '../../image/s7_Software_Development.png'
 
 import tick from '../../image/tick.png'
 
+
 const contents = [
     {
         title: "Experience",
