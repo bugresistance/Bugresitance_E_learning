@@ -11,24 +11,24 @@ import Typography from '@mui/material/Typography';
 import Badge from '@mui/material/Badge';
 import { ArrowRight } from '@mui/icons-material';
 
-// import testrail from '../../images/testrail.png'
-import jira from '/../../images/jira.png'
-import clickup from '/../../images/clickup.png'
-import jama from '/../../images/jama.png'
-import Trello from '/../../images/trello.png'
-import kanban from '/../../images/kanban.png'
-import zephyr from '/../../images/zephyr.png'
-import bugzilla from '/../../images/bugzilla.png'
-import agile from '/../../images/agile.png'
-import devops from '/../../images/devops.png'
+import testrail from '../../images/testrail.png'
+import jira from '../../images/jira.png'
+import clickup from '../../images/clickup.png'
+import jama from '../../images/jama.png'
+import Trello from '../../images/trello.png'
+import kanban from '../../images/kanban.png'
+import zephyr from '../../images/zephyr.png'
+import bugzilla from '../../images/bugzilla.png'
+import agile from '../../images/agile.png'
+import devops from '../../images/devops.png'
 
-import s1 from '/../../images/s1_Healthcare.png'
-import s2 from '/../../images/s2_EduTech.png'
-import s3 from '/../../images/S3_Travel.png'
-import s4 from '/../../images/s4_Business.png'
-import s5 from '/../../images/s5_ecommerce.png'
-import s6 from '/../../images/s6_B2B.png'
-import s7 from '/../../images/s7_Software_Development.png'
+import s1 from '../../images/s1_Healthcare.png'
+import s2 from '../../images/s2_EduTech.png'
+import s3 from '../../images/S3_Travel.png'
+import s4 from '../../images/s4_Business.png'
+import s5 from '../../images/s5_ecommerce.png'
+import s6 from '../../images/s6_B2B.png'
+import s7 from '../../images/s7_Software_Development.png'
 
 import tick from '../../images/tick.png'
 
@@ -59,7 +59,7 @@ const contents = [
         details: "We have different cooperation models suitable for projects of any scale and complexity."
     },
 
-
+    
 ]
 
 const badgeStyle = {
@@ -477,8 +477,7 @@ const SharedService = ({size,handleChange,expanded}) => {
                             <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                 <Card sx={{ height: "170px"}}>
                                     <CardContent className='card_content'>
-                                        {/* <img src={testrail} className='img-fluid text-center' /> */}
-                                        <img src={jira} className='img-fluid text-center' />
+                                        <img src={testrail} className='img-fluid text-center' />
                                     </CardContent>
                                 </Card>
                             </div>
@@ -565,8 +564,7 @@ const SharedService = ({size,handleChange,expanded}) => {
                             <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                 <Card sx={{ height: "170px" }}>
                                     <CardContent className='card_content'>
-                                        {/* <img src={testrail} className='img-fluid'/> */}
-                                        <img src={jira} className='img-fluid text-center' />
+                                        <img src={testrail} className='img-fluid'/>
                                     </CardContent>
                                 </Card>
                             </div>
