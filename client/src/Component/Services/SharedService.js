@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 import Badge from '@mui/material/Badge';
 import { ArrowRight } from '@mui/icons-material';
 
-import testrail from '../../images/testrail.png'
+// import testrail from '../../images/testrail.png'
 import jira from '../../images/jira.png'
 import clickup from '../../images/clickup.png'
 import jama from '../../images/jama.png'
@@ -59,7 +59,7 @@ const contents = [
         details: "We have different cooperation models suitable for projects of any scale and complexity."
     },
 
-    
+
 ]
 
 const badgeStyle = {
@@ -477,7 +477,8 @@ const SharedService = ({size,handleChange,expanded}) => {
                             <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                 <Card sx={{ height: "170px"}}>
                                     <CardContent className='card_content'>
-                                        <img src={testrail} className='img-fluid text-center' />
+                                        {/* <img src={testrail} className='img-fluid text-center' /> */}
+                                        <img src={jira} className='img-fluid text-center' />
                                     </CardContent>
                                 </Card>
                             </div>
@@ -564,7 +565,8 @@ const SharedService = ({size,handleChange,expanded}) => {
                             <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                 <Card sx={{ height: "170px" }}>
                                     <CardContent className='card_content'>
-                                        <img src={testrail} className='img-fluid'/>
+                                        {/* <img src={testrail} className='img-fluid'/> */}
+                                        <img src={jira} className='img-fluid text-center' />
                                     </CardContent>
                                 </Card>
                             </div>
