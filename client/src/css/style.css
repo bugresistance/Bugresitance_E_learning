@@ -1664,7 +1664,7 @@ body::-webkit-scrollbar-thumb:hover {
     height: 100vh;
     z-index: 999999999;
     overflow: visible;
-    background: #ffffff url(../images/preloader.gif) no-repeat center center;
+    background: #ffffff url(../image/preloader.gif) no-repeat center center;
     background-size: 400px 400px;
 }
   #header-section.header-fixed {
@@ -1836,7 +1836,7 @@ body::-webkit-scrollbar-thumb:hover {
 #header-section .navbar .navbar-nav .menu_has_children::after{
     position: absolute;
     content: '';
-    background-image: url(../images/down-arrow.png);
+    background-image: url(../image/down-arrow.png);
     background-repeat: no-repeat;
     height: 7px;
     width: 15px;
@@ -1950,7 +1950,7 @@ body::-webkit-scrollbar-thumb:hover {
 #banner-section {
     position: relative;
     padding-top: 170px;
-    background-image: url(../images/banner-bg.png);
+    background-image: url(../image/banner-bg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -2217,7 +2217,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* Testimonials */
 #testimonials .left-area{
     position: relative;
-    background-image: url(../images/testimonials-slider-bg.png);
+    background-image: url(../image/testimonials-slider-bg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -2287,7 +2287,7 @@ body::-webkit-scrollbar-thumb:hover {
 #worked-with{
     padding-top: 56px;
     padding-bottom: 58px;
-    background-image: url(../images/brand-bg.png);
+    background-image: url(../image/brand-bg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -2359,7 +2359,7 @@ body::-webkit-scrollbar-thumb:hover {
 #faq-section .overlay .card-header .collapsed.btn-link::after {
     position: absolute;
     content: '';
-    background-image: url(../images/right-arrow.png);
+    background-image: url(../image/right-arrow.png);
     background-repeat: no-repeat;
     height: 15px;
     width: 15px;
@@ -2370,7 +2370,7 @@ body::-webkit-scrollbar-thumb:hover {
 #faq-section .overlay .card-header .btn-link::after {
     position: absolute;
     content: '';
-    background-image: url(../images/right-arrow.png);
+    background-image: url(../image/right-arrow.png);
     background-repeat: no-repeat;
     height: 15px;
     width: 15px;
@@ -2381,7 +2381,7 @@ body::-webkit-scrollbar-thumb:hover {
 #faq-section .overlay .card-header .btn-link::before {
     position: absolute;
     content: '';
-    background-image: url(../images/faq-icon.png);
+    background-image: url(../image/faq-icon.png);
     background-repeat: no-repeat;
     height: 40px;
     width: 40px;
@@ -2394,7 +2394,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* footer-section */
 #footer-section .overlay{
     position: relative;
-    background-image: url(../images/footer-bg.png);
+    background-image: url(../image/footer-bg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: 0 5%;
@@ -2426,7 +2426,7 @@ body::-webkit-scrollbar-thumb:hover {
 #banner-section.inner-banner{
     padding-top: 174px;
     padding-bottom: 0;
-    background-image: url(../images/inner-banner-bg.png);
+    background-image: url(../image/inner-banner-bg.png);
 }
 #banner-section.inner-banner .banner-content .social {
     position: initial;
@@ -3218,7 +3218,7 @@ body::-webkit-scrollbar-thumb:hover {
 #all-products .left-side .highlights .items p::after{
     position: absolute;
     content: '';
-    background-image: url(../images/check.png);
+    background-image: url(../image/check.png);
     background-repeat: no-repeat;
     height: 17px;
     width: 21px;
@@ -3431,7 +3431,7 @@ body::-webkit-scrollbar-thumb:hover {
     color: rgb(255, 255, 255);
 }
 #banner-section.cart .breadcrumb-item+.breadcrumb-item::before {
-    content: url('../images/right-icon.png');
+    content: url('../image/right-icon.png');
     margin-top: 2px;
 }
 .slick-slide>div:nth-child(1){
@@ -3530,7 +3530,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 #cart-products .table tbody tr td button{
     position: absolute;
-    content: url(../images/close-btn.png);
+    content: url(../image/close-btn.png);
     right: -9px;
     top: -9px;
     border-radius: 50%;
@@ -3640,19 +3640,19 @@ body::-webkit-scrollbar-thumb:hover {
     height: 100%;
 }
 /* #blog-content .nav-top-area .nav-tabs .nav-link.posts.active:before{
-    background-image: url(../images/post-alt.png);
+    background-image: url(../image/post-alt.png);
 } */
 #blog-content .nav-top-area .nav-tabs .nav-link.design.active:before{
-    background-image: url(../images/design-alt.png);
+    background-image: url(../image/design-alt.png);
 }
 #blog-content .nav-top-area .nav-tabs .nav-link.marketing.active:before{
-    background-image: url(../images/marketing-alt.png);
+    background-image: url(../image/marketing-alt.png);
 }
 #blog-content .nav-top-area .nav-tabs .nav-link.development.active:before{
-    background-image: url(../images/dev-alt.png);
+    background-image: url(../image/dev-alt.png);
 }
 #blog-content .nav-top-area .nav-tabs .nav-link.tutorial.active:before{
-    background-image: url(../images/tutorial-alt.png);
+    background-image: url(../image/tutorial-alt.png);
 }
 #blog-content .nav-top-area .nav-tabs .nav-link.active {
     background-image: linear-gradient( 45deg, rgb(247,112,98) 0%, rgb(254,81,150) 100%);
