@@ -157,7 +157,7 @@ const SharedService = ({size,handleChange,expanded}) => {
                         <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
                             <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                 {/* <FontAwesomeIcon icon={faDisplay} size="4x" /> */}
-                                <img src={tick} style={{ height: "40px", width: "40px" }} />
+                                <img src={'../../images/tick.png'} style={{ height: "40px", width: "40px" }} />
                                 <p style={{ marginLeft: "15px" }}>Websites </p>
                             </div>
 
