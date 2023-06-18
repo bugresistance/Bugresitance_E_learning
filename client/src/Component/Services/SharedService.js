@@ -59,6 +59,7 @@ const contents = [
         details: "We have different cooperation models suitable for projects of any scale and complexity."
     },
 
+    
 ]
 
 const badgeStyle = {
