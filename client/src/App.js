@@ -54,7 +54,7 @@ const App = () => {
   const StandardSQA = () => {
     return (
       <>
-        <Route path='/blog' exact element={<Blog />} />
+        {/* <Route path='/blog' exact element={<Blog />} /> */}
         <Route path='/service/mobiletesting' exact element={<MobileTesting />} />
         <Route path='/service/manualtesting' exact element={<ManualTesting />} />
         <Route path='/service/webtesting' exact element={<WebAppTesting />} />
