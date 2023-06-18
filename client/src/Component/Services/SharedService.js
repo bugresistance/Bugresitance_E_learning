@@ -161,7 +161,6 @@ const SharedService = ({size,handleChange,expanded}) => {
                                 <img src={s3} style={{ height: "40px", width: "40px" }} />
                                 <p style={{ marginLeft: "15px" }}>Websites </p>
                             </div>
-
                         </Grid>
 
                         <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
