@@ -104,7 +104,7 @@ function Main() {
 
   const [loading,setLoading] = useState(false)
 
-  const [time,setTime] = useState('')
+  // const [time,setTime] = useState('')
 
   const getData = async () => {
       setLoading(true)
@@ -117,7 +117,7 @@ function Main() {
       const data = await res.json()
       if (res.status === 200) {
           console.log(data);
-          setTime(data[0].dateandtime)
+          // setTime(data[0].dateandtime)
           setLoading(false)
       } else {
           setLoading(false)
@@ -408,7 +408,7 @@ function Main() {
         //   maxHeight: `${isTabWindow < 1250? parseInt(isTabWindow/50)*3 + 32 : 32}rem`,
         // }}
         >
-          <CouresMaterial width={isTabWindow} time={time}/>
+          <CouresMaterial width={isTabWindow} time={"9th Batch will start from: 13th June,2023."}/>
         </aside>)}
 
       </main>
