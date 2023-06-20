@@ -81,6 +81,7 @@ const CouresMaterial = ({time}) => {
                     {/* <span className='course__amount_installment' style={{fontWeight: "700 !important"}}>৳ ৪,০০০</span> */}
                     </div>
 
+
                 </div>
                 <div className='sticky__btn row'>
                     <span>
