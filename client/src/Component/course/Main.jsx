@@ -198,7 +198,7 @@ function Main() {
               <div>
                 <div className="gutter__div"></div>
                 <aside className="course_side_content">
-                  <CouresMaterial time="9th Batch will start from: 13th June,2023."/>
+                  <CouresMaterial time={"9th Batch will start from: 13th June,2023."}/>
                 </aside>
               </div>
             )}
