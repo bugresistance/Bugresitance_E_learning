@@ -15,6 +15,7 @@ import { toast } from 'react-toastify';
 const Contact = () => {
     const [isValidate, setIsValidate] = useState(true)
     const commonToast = (field) => {
+        toast.dismiss();
         toast(`${field} field is empty`, {
             position: "top-center",
             autoClose: 5000,
@@ -28,7 +29,9 @@ const Contact = () => {
     }
 
     const middleWare = () => {
-        const mobileRegex = /^\+?(88)?0?1[3456789][0-9]{8}\b/g
+        const mobileNumber = email.mobile_number.replace(/\s/g, "");
+        const mobileRegex = /^[0-9+]{7,15}$/g
+        // /^\+?(88)?0?1[3456789][0-9]{8}\b/g
         const emailRegex = /^[a-z0-9._-]+@([a-z0-9-]+\.)+[a-z]{2,4}$/g
         const nameRegex = /^[A-Za-z.\s]{2,30}$/g
 
@@ -58,7 +61,7 @@ const Contact = () => {
             });
             return true
         }
-        else if (!mobileRegex.test(email.mobile_number.trim())) {
+        else if (!mobileRegex.test(mobileNumber.trim())) {
             toast(`Invalid Phone Number`, {
                 position: "top-center",
                 autoClose: 5000,
@@ -80,6 +83,7 @@ const Contact = () => {
         // const isValidationError = middleWare()
         // console.log("before",email);
         if (email.name.trim() === '') {
+            
             commonToast('Name')
         } else if (email.email_address.trim() === '') {
             commonToast('Email')
