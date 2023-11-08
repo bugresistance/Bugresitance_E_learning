@@ -38,13 +38,13 @@ const instructor = [
     name: "Fahim Chowdhury",
     imgsrc: oneImg,
     title: "Instructor, Bug Resistance",
-    content: "Software Engineer at Relisource Tech Ltd, having more than three years of experience in the Software Quality Assurance sector. Previously, I had been working in Tekarsh as a SQA Engineer. Besides regular duties, I love to engage myself in producing something useful; using the creativity I have & the knowledge I have gained."
+    content: "Software Engineer at Relisource Tech Ltd, having more than three years of experience in the Software Quality Assurance sector. Previously, he had been working in Tekarsh as a SQA Engineer. Besides regular duties, he loves to engage himself in producing something useful; using the creativity he has & the knowledge he has gained."
   },
   {
-    name: "Makid Haider",
-    imgsrc: secondImage,
+    name: "Mohoshi Haque",
+    imgsrc: '',
     title: "Instructor, Bug Resistance",
-    content: "Having graduated from Ahsanullah University of Science and Technology, I joined BJIT ltd as a SQA Engineer. Since then, I have been working in QA professionally. I am currently working at IdeaScale ltd. In 2022,  I've successfully passed one of the most prestigious certificates for any SQA Engineer, the ISTQB® - International Software Testing Qualifications Board exam."
+    content: "Mohoshi Haque is a seasoned Software Quality Assurance (SQA) Instructor with over 2.5+ years of industry experience.Formerly an SQA professional at Jatri and A2Z, Mohoshi's extensive practical knowledge in SQA principles equips him to prepare students for success in the dynamic SQA field. His passion for mentoring and his ability to bridge the theory-practice gap make him an exceptional SQA instructor. Join Mohoshi Haque to embark on your journey into the world of Software Quality Assurance."
   },
 
   // {
@@ -198,7 +198,7 @@ function Main() {
                     <div>
                       <div className="gutter__div"></div>
                       <aside className="course_side_content">
-                        <CouresMaterial time={"12th Batch will start from: 08th October,2023."} />
+                        <CouresMaterial time={"13th Batch will start from: 26th November,2023."} />
                       </aside>
                     </div>
                   )}

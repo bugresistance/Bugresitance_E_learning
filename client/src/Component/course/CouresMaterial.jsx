@@ -73,7 +73,7 @@ const CouresMaterial = ({time}) => {
                     </div>
                     <hr style={{border: "1px solid #5C2CC5"}} />
                     <div>
-                    <span>দুইটি ইন্সটলমেন্টে কোর্স ফি পরিশোধ করা যাবে</span>
+                    {/* <span>দুইটি ইন্সটলমেন্টে কোর্স ফি পরিশোধ করা যাবে</span> */}
                     {/* <span className='course__amount_installment' style={{fontWeight: "700 !important"}}>৳ ৪,০০০</span> */}
                     </div>
                     <div style={{marginTop:"10px"}}>

@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/style.css'
 import './css/admin.css'
 import './css/animate.css'
+import './css/course.css'
 // import './css/bootstrap.min.css'
 import './css/nice-select.css'
 import './css/slick.css'
@@ -49,6 +50,7 @@ import IotTesting from './Component/Services/SpecializedSQA/IotTesting'
 import BlockChainTesting from './Component/Services/SpecializedSQA/BlockChainTesting'
 import AlTesting from './Component/Services/SpecializedSQA/AlTesting'
 import GlobalizationTesting from './Component/Services/SpecializedSQA/GlobalizationTesting'
+import CourseLists from './Component/course/CourseLists'
 
 const App = () => {
   const StandardSQA = () => {
@@ -90,7 +92,7 @@ const App = () => {
         <Route path="/student" exact element={<CardSlider />} />
         <Route path='/courseadmission' exact element={<Main />} />
         {
-        StandardSQA()
+          StandardSQA()
         }
         {
           SpecializedSQA()
@@ -100,6 +102,7 @@ const App = () => {
         <Route path='/contact' exact element={<Contact />} />
         <Route path='form' element={<AdmissionForm />} />
         <Route path='/adminpanelstudentdetail' exact element={<UserProtected><StudentDetails /></UserProtected>} />
+        <Route path='/courselists' exact element={<CourseLists />} />
       </Routes>
       <ToastContainer />
     </div>
