@@ -11,6 +11,7 @@ import companyIcon from '../image/company.png'
 import { Link } from 'react-router-dom';
 
 import { toast } from 'react-toastify';
+import UpdatedFooter from './Shared/UpdatedFooter';
 
 const Contact = () => {
     const [isValidate, setIsValidate] = useState(true)
@@ -245,7 +246,7 @@ const Contact = () => {
                 </div>
             </section>
             {/* <!-- Contact me end --> */}
-            <Footer />
+            <UpdatedFooter />
 
         </div>
     )

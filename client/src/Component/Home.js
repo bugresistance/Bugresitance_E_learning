@@ -17,6 +17,7 @@ import smoketesting from '../image/Smoke testing.png'
 import StudentBig from './StudentBig'
 import Footer from './Shared/Footer'
 import NavbarTop from './Shared/NavbarTop'
+import UpdatedFooter from './Shared/UpdatedFooter'
 const Home = () => {
 
 
@@ -166,7 +167,7 @@ const Home = () => {
       {/* <!-- footer-section start --> */}
 
       
-     <Footer/>
+     <UpdatedFooter/>
     </>
 
   )

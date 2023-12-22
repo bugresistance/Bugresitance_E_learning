@@ -179,7 +179,7 @@ const NavbarTop = () => {
                     <ul class="navbar-nav main-menu ml-auto"  style={{width:"100%"}}>
                       <li className='visible-list' onClick={handleNavbarClick}><Link to="/">Home</Link></li>
                       {/* <li className='visible-list' ><Link to="/Bug_resistance_eLearning/">About</Link></li> */}
-                      <li className='visible-list' onClick={handleNavbarClick}><Link to="/courseadmission">Course Admission</Link></li>
+                      <li className='visible-list' onClick={handleNavbarClick}><Link to="/courselists">Course Admission</Link></li>
                       {/* <li className='visible-list' ><Link to="/Bug_resistance_eLearning/" >Career-Blog</Link></li> */}
                       {/* <li className='visible-list'> */}
                       {/* <Dropdown className='visible-list' nav inNavbar isOpen={dropdownOpen}   toggle={toggleDropdown} onClick={toggleDropdown} onMouseLeave={toggleDropdown}> */}

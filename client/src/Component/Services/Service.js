@@ -5,6 +5,7 @@ import NavbarTop from '../Shared/NavbarTop'
 
 import Footer from '../Shared/Footer';
 import SharedService from './SharedService';
+import UpdatedFooter from '../Shared/UpdatedFooter';
 
 
 const Service = ({title,description,servicebanner}) => {
@@ -66,7 +67,7 @@ const Service = ({title,description,servicebanner}) => {
                 </div>
             </div>
 
-            <Footer />
+            <UpdatedFooter />
         </div>
     )
 }

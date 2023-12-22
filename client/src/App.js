@@ -51,6 +51,7 @@ import BlockChainTesting from './Component/Services/SpecializedSQA/BlockChainTes
 import AlTesting from './Component/Services/SpecializedSQA/AlTesting'
 import GlobalizationTesting from './Component/Services/SpecializedSQA/GlobalizationTesting'
 import CourseLists from './Component/course/CourseLists'
+import CourseTwo from './Component/course/course2/Main'
 
 const App = () => {
   const StandardSQA = () => {
@@ -91,6 +92,7 @@ const App = () => {
         <Route path="/" exact element={<Home />} />
         <Route path="/student" exact element={<CardSlider />} />
         <Route path='/courseadmission' exact element={<Main />} />
+        <Route path='/courseadmission/2' exact element={<CourseTwo />} />
         {
           StandardSQA()
         }
