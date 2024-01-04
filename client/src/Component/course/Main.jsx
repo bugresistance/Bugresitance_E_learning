@@ -15,6 +15,7 @@ import WithCarousel from "./WithCarousel";
 import CouresMaterial from "./CouresMaterial";
 import BottomSticky from "./BottomSticky";
 import Footer from '../Shared/Footer'
+import UpdatedFooter from '../Shared/UpdatedFooter'
 // import "bootstrap/dist/css/bootstrap.min.css"
 import oneImg from "../../image/Fahim Hasan.jpg"
 import secondImage from '../../image/Makid Hyder.jpg'
@@ -416,7 +417,7 @@ function Main() {
             <BottomSticky />
           )}
 
-          <Footer />
+          <UpdatedFooter />
 
         </>
       }

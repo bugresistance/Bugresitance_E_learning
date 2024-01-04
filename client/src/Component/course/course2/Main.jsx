@@ -19,6 +19,7 @@ import jakaria from '../../../images/Jakaria.png'
 import oneImg from "../../../image/Fahim Hasan.jpg"
 
 import NavbarTop from "../../Shared/NavbarTop";
+import UpdatedFooter from '../../Shared/UpdatedFooter'
 import { Avatar } from "@mui/material";
 import { useLayoutEffect } from "react";
 import { useRef } from "react";
@@ -183,7 +184,7 @@ function CourseTwo() {
                     <div>
                       <div className="gutter__div"></div>
                       <aside className="course_side_content">
-                        <CouresMaterial time={"13th Batch will start from: 26th November,2023."} />
+                        <CouresMaterial time={"1st Batch will start from: 8th January,2024."} />
                       </aside>
                     </div>
                   )}
@@ -393,7 +394,7 @@ function CourseTwo() {
             //   maxHeight: `${isTabWindow < 1250? parseInt(isTabWindow/50)*3 + 32 : 32}rem`,
             // }}
             >
-              <CouresMaterial width={isTabWindow} time={"1st Batch will start from: 3rd February,2024"} />
+              <CouresMaterial width={isTabWindow} time={"1st Batch will start from: 8th January,2024."} />
             </aside>)}
 
           </main>
@@ -401,7 +402,7 @@ function CourseTwo() {
             <BottomSticky />
           )}
 
-          <Footer />
+          <UpdatedFooter />
 
         </>
       }
