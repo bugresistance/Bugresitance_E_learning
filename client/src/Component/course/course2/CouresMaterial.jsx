@@ -88,7 +88,7 @@ const CouresMaterial = ({time}) => {
                     <a  href='https://docs.google.com/forms/d/e/1FAIpQLSf_3js_gwletO_svcoqELWm36fx34EaJgrttlwuyu6FBVNiNA/viewform' target={"_blank"} class="cmn-btn" style={{ textDecoration: "none", backgroundColor: "#F23460", color: "#ffffff", border: "2px solid #F23460"}}>এখনই ভর্তি হোন</a>
                     </span>
                     <span >
-                    <a href='https://drive.google.com/file/d/1YGrnROqvRlOEbJNXR61ITkPVlf02EerL/view?usp=sharing' download target={"_blank"} class="cmn-btn" style={{ textDecoration: "none", backgroundColor: "transparent",border: "2px solid #F23460", color: "#ffffff" }} role={"button"}>ডাউনলোড সিলেবাস</a>
+                    <a href='https://drive.google.com/file/d/1pBrtascjvnZnc8ZLDLGCBtNsMLQcoL47/view?usp=sharing' download target={"_blank"} class="cmn-btn" style={{ textDecoration: "none", backgroundColor: "transparent",border: "2px solid #F23460", color: "#ffffff" }} role={"button"}>ডাউনলোড সিলেবাস</a>
                     </span>
                 </div>
             </div>

@@ -41,7 +41,7 @@ const CourseLists = () => {
             img: bug,
             courseName: "Advanced Automation Testing(Selenium)",
             coursePrice: "৳ ১০০০০",
-            courseLesson: "Next Batch: 29th Jan, 2024",
+            courseLesson: "Next Batch: 10th February, 2024",
             courseTime: "3 Months",
             courseNavigate:"/courseadmission/2"
         },

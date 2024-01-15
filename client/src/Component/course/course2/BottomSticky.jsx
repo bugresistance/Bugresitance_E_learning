@@ -8,7 +8,7 @@ const BottomSticky = () => {
                  মূল্য:<span style={{display: "contents"}} >৳ ১০০০০</span>
                 </div>
                     <div className="coures__pricing admission_now">
-                    <a href='https://docs.google.com/forms/d/e/1FAIpQLSf_3js_gwletO_svcoqELWm36fx34EaJgrttlwuyu6FBVNiNA/viewform' target={"_blank"} role={"button"}><span>এখনই ভর্তি হোন </span></a>
+                    <a href='https://drive.google.com/file/d/1pBrtascjvnZnc8ZLDLGCBtNsMLQcoL47/view?usp=sharing' target={"_blank"} role={"button"}><span>এখনই ভর্তি হোন </span></a>
                     </div>
                     <div className="coures__pricing download__syllabus">
                     <Link to='' role={"button"}> <span>ডাউনলোড সিলেবাস</span></Link>

@@ -176,7 +176,7 @@ function CourseTwo() {
                     <div className="top-image">
                       {/* <img src={topImage} onLoad={()=> setImgLoad(true)} ref={imgRef} alt="top pic" className="" loading="lazy" /> */}
                       <iframe id="player" onLoad={() => setImgLoad(true)} type="text/html" width="716" height="403" autoplay={1}
-                        src="https://www.youtube.com/embed/jcQ2B0n5K-Y?enablejsapi=1&v=jcQ2B0n5K-Y&autoplay=1"
+                        src="https://www.youtube.com/embed/lhK8AtoBT5o?enablejsapi=1&v=jcQ2B0n5K-Y&autoplay=1"
                         frameborder="0"></iframe>
                     </div>
                   </div>
