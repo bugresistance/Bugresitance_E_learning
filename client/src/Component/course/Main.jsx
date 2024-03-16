@@ -199,7 +199,7 @@ function Main() {
                     <div>
                       <div className="gutter__div"></div>
                       <aside className="course_side_content">
-                        <CouresMaterial time={"14th Batch will start from: 8th January,2024"} />
+                        <CouresMaterial time={"16th Batch will start from: 27th April,2024"} />
                       </aside>
                     </div>
                   )}
@@ -409,7 +409,7 @@ function Main() {
             //   maxHeight: `${isTabWindow < 1250? parseInt(isTabWindow/50)*3 + 32 : 32}rem`,
             // }}
             >
-              <CouresMaterial width={isTabWindow} time={"14th Batch will start from: 8th January,2024"} />
+              <CouresMaterial width={isTabWindow} time={"16th Batch will start from: 27th April,2024"} />
             </aside>)}
 
           </main>

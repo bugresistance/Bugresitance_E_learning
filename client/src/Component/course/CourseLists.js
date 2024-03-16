@@ -33,9 +33,9 @@ const CourseLists = () => {
             img: bug2,
             courseName: "Manual & Automation Testing",
             coursePrice: "৳ ৬০০০",
-            courseLesson: "Next Batch: 8th Jan, 2024",
+            courseLesson: "Next Batch: 27th Apr, 2024",
             courseTime: "3 Months",
-            courseNavigate:"/courseadmission/manual&automation"
+            courseNavigate:"/jobcracksqa"
         },
         {
             img: bug,
@@ -43,7 +43,7 @@ const CourseLists = () => {
             coursePrice: "৳ ১০০০০",
             courseLesson: "Next Batch: 10th February, 2024",
             courseTime: "3 Months",
-            courseNavigate:"/courseadmission/advancedautomation"
+            courseNavigate:"/automationselenium"
         },
     ]
 
