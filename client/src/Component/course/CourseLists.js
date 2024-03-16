@@ -35,7 +35,7 @@ const CourseLists = () => {
             coursePrice: "৳ ৬০০০",
             courseLesson: "Next Batch: 8th Jan, 2024",
             courseTime: "3 Months",
-            courseNavigate:"/courseadmission"
+            courseNavigate:"/courseadmission/manual&automation"
         },
         {
             img: bug,
@@ -43,7 +43,7 @@ const CourseLists = () => {
             coursePrice: "৳ ১০০০০",
             courseLesson: "Next Batch: 10th February, 2024",
             courseTime: "3 Months",
-            courseNavigate:"/courseadmission/2"
+            courseNavigate:"/courseadmission/advancedautomation"
         },
     ]
 

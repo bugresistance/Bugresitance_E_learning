@@ -91,8 +91,8 @@ const App = () => {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/student" exact element={<CardSlider />} />
-        <Route path='/courseadmission' exact element={<Main />} />
-        <Route path='/courseadmission/2' exact element={<CourseTwo />} />
+        <Route path='/courseadmission/manual&automation' exact element={<Main />} />
+        <Route path='/courseadmission/advancedautomation' exact element={<CourseTwo />} />
         {
           StandardSQA()
         }
