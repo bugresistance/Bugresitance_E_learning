@@ -33,7 +33,7 @@ const CourseLists = () => {
             img: bug2,
             courseName: "Manual & Automation Testing",
             coursePrice: "৳ ৬০০০",
-            courseLesson: "Next Batch: 27th Apr, 2024",
+            courseLesson: "Next Batch: 29th June, 2024",
             courseTime: "3 Months",
             courseNavigate:"/jobcracksqa"
         },
