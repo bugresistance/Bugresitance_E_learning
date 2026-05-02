@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-import StudentBig from './StudentBig'
+
 import NavbarTop from './Shared/NavbarTop'
 import UpdatedFooter from './Shared/UpdatedFooter'
 import ProductShowcase from './ProductShowcase'
@@ -49,7 +49,7 @@ const Home = () => {
                 We <span className="highlight">Deliver.</span>
               </h1>
               <p className="hero-description" style={{ animation: 'fadeInUp 0.8s ease both' }}>
-                End-to-end software development and quality assurance services. 
+                End-to-end software development and quality assurance services.
                 From concept to deployment, we craft robust, tested, and scalable digital solutions.
               </p>
               <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', animation: 'fadeInUp 0.9s ease both' }}>
@@ -62,15 +62,15 @@ const Home = () => {
               </div>
               <div className="hero-stats" style={{ animation: 'fadeInUp 1s ease both' }}>
                 <div className="stat-item">
-                  <div className="stat-number">50+</div>
+                  <div className="stat-number">20+</div>
                   <div className="stat-label">Clients</div>
                 </div>
                 <div className="stat-item">
-                  <div className="stat-number">120+</div>
+                  <div className="stat-number">25+</div>
                   <div className="stat-label">Projects</div>
                 </div>
                 <div className="stat-item">
-                  <div className="stat-number">18+</div>
+                  <div className="stat-number">12+</div>
                   <div className="stat-label">QA Services</div>
                 </div>
                 <div className="stat-item">
@@ -199,7 +199,7 @@ const Home = () => {
         <div className="container">
           <h2 className="cta-heading">Ready to Build Your Next Project?</h2>
           <p className="cta-text">
-            From ideation to deployment, our team of developers and QA engineers 
+            From ideation to deployment, our team of developers and QA engineers
             deliver production-ready solutions with zero compromises on quality.
           </p>
           <div className="cta-buttons">
@@ -213,8 +213,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ===== TESTIMONIALS ===== */}
-      <StudentBig />
 
       {/* ===== FOOTER ===== */}
       <UpdatedFooter />

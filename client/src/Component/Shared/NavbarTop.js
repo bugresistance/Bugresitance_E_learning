@@ -21,6 +21,32 @@ import { Paper, styled, Grid } from '@mui/material';
 import logo from '../../image/saimom_62.png'
 import { Link } from 'react-router-dom'
 import BugReportIcon from '@mui/icons-material/BugReport';
+// Software Development icons
+import CodeIcon from '@mui/icons-material/Code';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
+import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
+import BrushIcon from '@mui/icons-material/Brush';
+import CloudQueueIcon from '@mui/icons-material/CloudQueue';
+// Standard QA icons
+import SearchIcon from '@mui/icons-material/Search';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import LanguageIcon from '@mui/icons-material/Language';
+import ReplayIcon from '@mui/icons-material/Replay';
+import ApiIcon from '@mui/icons-material/Api';
+import StorageIcon from '@mui/icons-material/Storage';
+import DesktopWindowsIcon from '@mui/icons-material/DesktopWindows';
+import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
+// Specialized QA icons
+import SmartToyIcon from '@mui/icons-material/SmartToy';
+import ShieldIcon from '@mui/icons-material/Shield';
+import DataObjectIcon from '@mui/icons-material/DataObject';
+import CloudDoneIcon from '@mui/icons-material/CloudDone';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
+import SpeedIcon from '@mui/icons-material/Speed';
+import DevicesOtherIcon from '@mui/icons-material/DevicesOther';
+import LinkIcon from '@mui/icons-material/Link';
+import PublicIcon from '@mui/icons-material/Public';
 
 
 // import { Dropdown } from 'bootstrap';
@@ -179,8 +205,6 @@ const NavbarTop = () => {
                     <ul class="navbar-nav main-menu ml-auto"  style={{width:"100%"}}>
                       <li className='visible-list' onClick={handleNavbarClick}><Link to="/">Home</Link></li>
                       {/* <li className='visible-list' ><Link to="/Bug_resistance_eLearning/">About</Link></li> */}
-                      <li className='visible-list' onClick={handleNavbarClick}><Link to="/courselists">Course Admission</Link></li>
-                      {/* <li className='visible-list' ><Link to="/Bug_resistance_eLearning/" >Career-Blog</Link></li> */}
                       {/* <li className='visible-list'> */}
                       {/* <Dropdown className='visible-list' nav inNavbar isOpen={dropdownOpen}   toggle={toggleDropdown} onClick={toggleDropdown} onMouseLeave={toggleDropdown}> */}
                       {/* nav inNavbar isOpen={dropdownOpen}   toggle={toggleDropdown} onClick={toggleDropdown} onMouseLeave={toggleDropdown} */}
@@ -236,15 +260,15 @@ const NavbarTop = () => {
                                   <Item elevation={'0'} sx={{ textAlign: 'left', '@media (max-width: 768px)': { display: 'flex', justifyContent: 'flex-start' } }}>
                                     <ul className='qa_services_left' style={{ color: 'black' }}>
                                       <li className='item'>
-                                        <span><BugReportIcon sx={{ color: '#5c2cc5' }} /></span>
+                                        <span><CodeIcon sx={{ color: '#5c2cc5' }} /></span>
                                         <Link to='/service/webdevelopment' className='grid__link_item' style={{ color: 'black' }}>Web Development</Link>
                                       </li>
                                       <li className='item'>
-                                        <span><BugReportIcon sx={{ color: '#5c2cc5' }} /></span>
+                                        <span><PhoneIphoneIcon sx={{ color: '#5c2cc5' }} /></span>
                                         <Link to='/service/mobiledevelopment' className='grid__link_item' style={{ color: 'black' }}>Mobile Development</Link>
                                       </li>
                                       <li className='item'>
-                                        <span><BugReportIcon sx={{ color: '#5c2cc5' }} /></span>
+                                        <span><SettingsApplicationsIcon sx={{ color: '#5c2cc5' }} /></span>
                                         <Link to='/service/customsoftware' className='grid__link_item' style={{ color: 'black' }}>Custom Software</Link>
                                       </li>
                                     </ul>
@@ -254,15 +278,15 @@ const NavbarTop = () => {
                                   <Item elevation={'0'} sx={{ textAlign: 'left', '@media (max-width: 768px)': { display: 'flex', justifyContent: 'flex-start' } }}>
                                     <ul className='qa_services_right'>
                                       <li className='item'>
-                                        <span><BugReportIcon sx={{ color: '#5c2cc5' }} /></span>
+                                        <span><IntegrationInstructionsIcon sx={{ color: '#5c2cc5' }} /></span>
                                         <Link to='/service/apiintegration' className='grid__link_item' style={{ color: 'black' }}>API Integration</Link>
                                       </li>
                                       <li className='item'>
-                                        <span><BugReportIcon sx={{ color: '#5c2cc5' }} /></span>
+                                        <span><BrushIcon sx={{ color: '#5c2cc5' }} /></span>
                                         <Link to='/service/uiuxdesign' className='grid__link_item' style={{ color: 'black' }}>UI/UX Design</Link>
                                       </li>
                                       <li className='item'>
-                                        <span><BugReportIcon sx={{ color: '#5c2cc5' }} /></span>
+                                        <span><CloudQueueIcon sx={{ color: '#5c2cc5' }} /></span>
                                         <Link to='/service/clouddevops' className='grid__link_item' style={{ color: 'black' }}>Cloud & DevOps</Link>
                                       </li>
                                     </ul>
@@ -278,19 +302,19 @@ const NavbarTop = () => {
                                   <Item elevation={'0'} sx={{ textAlign: "left", '@media (max-width: 768px)': { display: "flex", justifyContent: "flex-start" } }}  >
                                     <ul className='qa_services_left' style={{ color: "black" }} >
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><SearchIcon sx={{ color: "#F23460" }} /></span>
                                         <Link to='/service/manualtesting' className='grid__link_item' id='grid__link__item' style={{ color: "black" }}  >Manual Testing</Link>
                                       </li>
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><PhoneAndroidIcon sx={{ color: "#F23460" }} /></span>
                                         <Link to='/service/mobiletesting' className='grid__link_item' style={{ color: "black" }}  >Mobile Testing</Link>
                                       </li>
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><LanguageIcon sx={{ color: "#F23460" }} /></span>
                                         <Link to='/service/webtesting' className='grid__link_item' style={{ color: "black" }}>Web App Testing</Link>
                                       </li>
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><ReplayIcon sx={{ color: "#F23460" }} /></span>
                                         <Link to='/service/regressiontesting' className='grid__link_item' style={{ color: "black" }}>Regression Testing</Link>
                                       </li>
                                     </ul>
@@ -301,22 +325,22 @@ const NavbarTop = () => {
                                   <Item elevation={'0'} sx={{ textAlign: "left", '@media (max-width: 768px)': { display: "flex", justifyContent: "flex-start" } }} >
                                     <ul className='qa_services_right'>
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><ApiIcon sx={{ color: "#F23460" }} /></span>
 
                                         <Link to='/service/apitesting' className='grid__link_item' style={{ color: "black" }}>API Testing</Link>
                                       </li >
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><StorageIcon sx={{ color: "#F23460" }} /></span>
 
                                         <Link to='/service/databasetesting' className='grid__link_item' style={{ color: "black" }}>Database Testing</Link>
                                       </li>
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><DesktopWindowsIcon sx={{ color: "#F23460" }} /></span>
 
                                         <Link to='/service/desktoptesting' className='grid__link_item' style={{ color: "black" }}>Desktop App Testing</Link>
                                       </li>
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><AccessibilityNewIcon sx={{ color: "#F23460" }} /></span>
 
                                         <Link to='/service/usabilitytesting' className='grid__link_item' style={{ color: "black" }}>Usability Testing</Link>
                                       </li>
@@ -333,23 +357,23 @@ const NavbarTop = () => {
                                   <Item elevation={'0'} sx={{ textAlign: "left", '@media (max-width: 768px)': { display: "flex", justifyContent: "flex-start" } }} >
                                     <ul className='qa_services_left' style={{ color: "black" }} >
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><SmartToyIcon sx={{ color: "#F23460" }} /></span>
                                         <Link to='/service/automationtesting' className='grid__link_item' style={{ color: "black" }}  >Automation Testing</Link>
                                       </li>
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><ShieldIcon sx={{ color: "#F23460" }} /></span>
                                         <Link to='/service/securitytesting' className='grid__link_item' style={{ color: "black" }}  >Security Testing </Link>
                                       </li>
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><DataObjectIcon sx={{ color: "#F23460" }} /></span>
                                         <Link to='/service/bigdatatesting' className='grid__link_item' style={{ color: "black" }}>Big Data Testing</Link>
                                       </li>
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><CloudDoneIcon sx={{ color: "#F23460" }} /></span>
                                         <Link to='/service/cloudtesting' className='grid__link_item' style={{ color: "black" }}>Cloud Testing</Link>
                                       </li>
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><AccountTreeIcon sx={{ color: "#F23460" }} /></span>
                                         <Link to='/service/erptesting' className='grid__link_item' style={{ color: "black" }}>ERP Testing</Link>
                                       </li>
                                     </ul>
@@ -362,24 +386,24 @@ const NavbarTop = () => {
                                   <Item elevation={'0'} sx={{ textAlign: "left", '@media (max-width: 768px)': { display: "flex", justifyContent: "flex-start" } }} >
                                     <ul className='qa_services_right qa_2' style={{ color: "black" }} >
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><SpeedIcon sx={{ color: "#F23460" }} /></span>
                                         <Link to='/service/loadtesting' className='grid__link_item' style={{ color: "black" }}  >Load Testing</Link>
                                       </li>
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><DevicesOtherIcon sx={{ color: "#F23460" }} /></span>
                                         <Link to='/service/iottesting' className='grid__link_item' style={{ color: "black" }}  >IOT Testing
                                         </Link>
                                       </li>
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><LinkIcon sx={{ color: "#F23460" }} /></span>
                                         <Link to='/service/blockchaintesting' className='grid__link_item' style={{ color: "black" }}>Blockchain Testing</Link>
                                       </li>
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><SmartToyIcon sx={{ color: "#F23460" }} /></span>
                                         <Link to='/service/altesting' className='grid__link_item' style={{ color: "black" }}>AL & ML Testing</Link>
                                       </li>
                                       <li className='item' >
-                                        <span><BugReportIcon sx={{ color: "#F23460" }} /></span>
+                                        <span><PublicIcon sx={{ color: "#F23460" }} /></span>
                                         <Link to='/service/globalizationtesting' className='grid__link_item' style={{ color: "black" }}>Globalization Testing</Link>
                                       </li>
                                     </ul>
@@ -397,6 +421,7 @@ const NavbarTop = () => {
                       {/* </li> */}
 
                       <li className='visible-list' onClick={handleNavbarClick}><Link to="/products">Products</Link></li>
+                      <li className='visible-list' onClick={handleNavbarClick}><Link to="/courselists">Courses</Link></li>
                       <li className='visible-list' onClick={handleNavbarClick}><Link to="/contact">Contact</Link></li>
 
                       {localStorage.getItem('userData') && <li className='visible-list' ><Link to="/addslide">Panel</Link></li>}

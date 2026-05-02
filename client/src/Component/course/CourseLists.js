@@ -6,6 +6,7 @@ import bug2 from '../../images/bug2.png'
 import autothumb from '../../images/automationthumb.png'
 import horizontal from '../../images/horizontal.jpg'
 import UpdatedFooter from '../Shared/UpdatedFooter'
+import StudentBig from '../StudentBig'
 import LayersOutlinedIcon from '@mui/icons-material/LayersOutlined';
 import TimerOutlinedIcon from '@mui/icons-material/TimerOutlined';
 
@@ -140,6 +141,8 @@ const CourseLists = () => {
                     </div>
                 ) : null} */}
             </div>
+
+            <StudentBig />
 
             <UpdatedFooter />
 

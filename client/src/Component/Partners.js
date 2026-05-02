@@ -2,19 +2,21 @@ import React from 'react'
 
 const Partners = () => {
   const stats = [
-    { num: '50+', text: 'Clients Worldwide' },
-    { num: '120+', text: 'Projects Delivered' },
-    { num: '15+', text: 'Industry Partners' },
-    { num: '5+', text: 'Countries Served' },
+    { num: '20+', text: 'Clients Worldwide' },
+    { num: '25+', text: 'Projects Delivered' },
+    { num: '10+', text: 'Industry Partners' },
+    { num: '3+', text: 'Countries Served' },
   ]
 
   const partners = [
-    { name: 'TechVista', color: '#5c2cc5' },
-    { name: 'CloudNine', color: '#F23460' },
-    { name: 'DataFlow', color: '#7b4fd6' },
-    { name: 'NexGen', color: '#3d1a8e' },
-    { name: 'InnoSoft', color: '#c41e48' },
-    { name: 'ByteCraft', color: '#5c2cc5' },
+    { name: 'BrainB', logo: '/partners/BrainB.png' },
+    { name: 'CDA', logo: '/partners/CDAB.png' },
+    { name: 'Dhumketu', logo: '/partners/Dhumketu logo.png' },
+    { name: 'JCI', logo: '/partners/JCI logo.png' },
+    { name: 'Paarel', logo: '/partners/PAAREL.png' },
+    { name: 'For The Light', logo: '/partners/for the light_logo-01.png' },
+    { name: 'Law', logo: '/partners/law.png' },
+    { name: 'Gojeta', logo: '/partners/gojeta.png' },
   ]
 
   return (
@@ -66,26 +68,24 @@ const Partners = () => {
         <div className="partners-logos">
           {partners.map((p, i) => (
             <div
-              className="partner-logo-item"
               key={i}
-              style={{ animationDelay: `${i * 0.1}s` }}
-            >
-              <div style={{
-                width: '48px',
-                height: '48px',
-                borderRadius: '12px',
-                background: `linear-gradient(135deg, ${p.color}20, ${p.color}10)`,
+              style={{
                 display: 'flex',
+                flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
-                margin: '0 auto 10px',
-                fontSize: '22px',
-                fontWeight: '800',
-                color: p.color
-              }}>
-                {p.name.charAt(0)}
-              </div>
-              {p.name}
+                padding: '10px',
+              }}
+            >
+              <img
+                src={p.logo}
+                alt={p.name}
+                style={{
+                  maxWidth: '340px',
+                  maxHeight: '180px',
+                  objectFit: 'contain',
+                }}
+              />
             </div>
           ))}
         </div>
