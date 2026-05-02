@@ -60,6 +60,7 @@ import CustomSoftware from './Component/Services/Development/CustomSoftware'
 import ApiIntegration from './Component/Services/Development/ApiIntegration'
 import UiUxDesign from './Component/Services/Development/UiUxDesign'
 import CloudDevops from './Component/Services/Development/CloudDevops'
+import ServicesPage from './Component/ServicesPage'
 
 const App = () => {
   const StandardSQA = () => {
@@ -113,6 +114,7 @@ const App = () => {
         <Route path='form' element={<AdmissionForm />} />
         <Route path='/adminpanelstudentdetail' exact element={<UserProtected><StudentDetails /></UserProtected>} />
         <Route path='/courselists' exact element={<CourseLists />} />
+        <Route path='/services' exact element={<ServicesPage />} />
         <Route path='/products' exact element={<ProductPage />} />
         <Route path='/service/webdevelopment' exact element={<WebDevelopment />} />
         <Route path='/service/mobiledevelopment' exact element={<MobileDevelopment />} />

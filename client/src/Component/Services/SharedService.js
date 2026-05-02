@@ -50,7 +50,7 @@ import devops from '../../images/devops.png'
 const contents = [
     {
         title: "Experience",
-        details: "During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries. During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries. During our 15+ years in the QA field, we have accomplished 3000+ projects for various industries."
+        details: "During our 5+ years in the field, we have accomplished 25+ projects for various industries."
     },
     {
         title: "Quick Start",
@@ -67,14 +67,14 @@ const contents = [
 
     {
         title: "on-demand services",
-        details: "The requested number of our 250+ QA engineers are ready to join your project at any phase of the software development life cycle, testing only what you need and when you need it."
+        details: "The requested number of our 50+ experts are ready to join your project at any phase of the software development life cycle, testing only what you need and when you need it."
     },
     {
         title: "Flexibility",
         details: "We have different cooperation models suitable for projects of any scale and complexity."
     },
 
-    
+
 ]
 
 const badgeStyle = {
@@ -86,7 +86,7 @@ const badgeStyle = {
     }
 }
 
-const SharedService = ({size,handleChange,expanded}) => {
+const SharedService = ({ size, handleChange, expanded }) => {
     return (
         <>
             {/* Industries We work With */}
@@ -489,7 +489,7 @@ const SharedService = ({size,handleChange,expanded}) => {
 
                         <Grid item xs={12} sm={6} md={4}>
                             <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                <Card sx={{ height: "170px"}}>
+                                <Card sx={{ height: "170px" }}>
                                     <CardContent className='card_content'>
                                         <img src={testrail} className='img-fluid text-center' />
                                     </CardContent>
@@ -502,7 +502,7 @@ const SharedService = ({size,handleChange,expanded}) => {
                             <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                 <Card sx={{ height: "170px" }}>
                                     <CardContent className='card_content'>
-                                        <img src={jira} className='img-fluid'  />
+                                        <img src={jira} className='img-fluid' />
                                     </CardContent>
                                 </Card>
                             </div>
@@ -513,7 +513,7 @@ const SharedService = ({size,handleChange,expanded}) => {
                             <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                 <Card sx={{ height: "170px" }}>
                                     <CardContent className='card_content'>
-                                        <img src={kanban} className='img-fluid'  />
+                                        <img src={kanban} className='img-fluid' />
                                     </CardContent>
                                 </Card>
                             </div>
@@ -578,7 +578,7 @@ const SharedService = ({size,handleChange,expanded}) => {
                             <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                 <Card sx={{ height: "170px" }}>
                                     <CardContent className='card_content'>
-                                        <img src={testrail} className='img-fluid'/>
+                                        <img src={testrail} className='img-fluid' />
                                     </CardContent>
                                 </Card>
                             </div>
@@ -589,7 +589,7 @@ const SharedService = ({size,handleChange,expanded}) => {
                             <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                 <Card sx={{ height: "170px" }}>
                                     <CardContent className='card_content'>
-                                        <img src={bugzilla} className='img-fluid'  />
+                                        <img src={bugzilla} className='img-fluid' />
                                     </CardContent>
                                 </Card>
                             </div>
@@ -623,7 +623,7 @@ const SharedService = ({size,handleChange,expanded}) => {
                             <div className='client-logo' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                 <Card sx={{ height: "170px" }}>
                                     <CardContent className='card_content'>
-                                        <img src={kanban} className='img-fluid'/>
+                                        <img src={kanban} className='img-fluid' />
                                     </CardContent>
                                 </Card>
                             </div>
