@@ -1,6 +1,7 @@
+const path = require('path');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
-dotenv.config();
+dotenv.config({ path: path.join(__dirname, '.env') });
 const app = require('./app');
 const DB = process.env.MONGODB_SERVER.replace('<password>', process.env.DB_PASSWORD)
 mongoose.connect(DB,{ useNewUrlParser: true, useUnifiedTopology: true })

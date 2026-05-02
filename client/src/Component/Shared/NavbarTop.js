@@ -218,16 +218,60 @@ const NavbarTop = () => {
                                 variant="fullWidth"
                                 aria-label="full width tabs example"
                               >
-                                <Tab className='tab__header_name' sx={{ ".MuiButtonBase-root": { fontSize: "16px" } }} label="Standard QA Services" {...a11yProps(0)} onClick={(e) => {
+                                <Tab className='tab__header_name' sx={{ ".MuiButtonBase-root": { fontSize: "16px" } }} label="Software Development" {...a11yProps(0)} onClick={(e) => {
                                   toggleDropdown('tab')
                                 }} />
-                                <Tab label="Specialized QA Services" {...a11yProps(1)} onClick={(e) => {
+                                <Tab label="Standard QA Services" {...a11yProps(1)} onClick={(e) => {
+                                  toggleDropdown('tab')
+                                }} />
+                                <Tab label="Specialized QA Services" {...a11yProps(2)} onClick={(e) => {
                                   toggleDropdown('tab')
                                 }} />
                               </Tabs>
                             </AppBar>
-                            {/* tab panel one */}
+                            {/* Software Development tab */}
                             <TabPanel value={value} index={0} dir={theme.direction}  >
+                              <Grid container className='grid__link'>
+                                <Grid xs={12} sm={6} className='left__grid_1' sx={{ width: '300px' }}>
+                                  <Item elevation={'0'} sx={{ textAlign: 'left', '@media (max-width: 768px)': { display: 'flex', justifyContent: 'flex-start' } }}>
+                                    <ul className='qa_services_left' style={{ color: 'black' }}>
+                                      <li className='item'>
+                                        <span><BugReportIcon sx={{ color: '#5c2cc5' }} /></span>
+                                        <Link to='/service/webdevelopment' className='grid__link_item' style={{ color: 'black' }}>Web Development</Link>
+                                      </li>
+                                      <li className='item'>
+                                        <span><BugReportIcon sx={{ color: '#5c2cc5' }} /></span>
+                                        <Link to='/service/mobiledevelopment' className='grid__link_item' style={{ color: 'black' }}>Mobile Development</Link>
+                                      </li>
+                                      <li className='item'>
+                                        <span><BugReportIcon sx={{ color: '#5c2cc5' }} /></span>
+                                        <Link to='/service/customsoftware' className='grid__link_item' style={{ color: 'black' }}>Custom Software</Link>
+                                      </li>
+                                    </ul>
+                                  </Item>
+                                </Grid>
+                                <Grid xs={12} sm={6} className='right__grid_1' sx={{ width: '300px' }}>
+                                  <Item elevation={'0'} sx={{ textAlign: 'left', '@media (max-width: 768px)': { display: 'flex', justifyContent: 'flex-start' } }}>
+                                    <ul className='qa_services_right'>
+                                      <li className='item'>
+                                        <span><BugReportIcon sx={{ color: '#5c2cc5' }} /></span>
+                                        <Link to='/service/apiintegration' className='grid__link_item' style={{ color: 'black' }}>API Integration</Link>
+                                      </li>
+                                      <li className='item'>
+                                        <span><BugReportIcon sx={{ color: '#5c2cc5' }} /></span>
+                                        <Link to='/service/uiuxdesign' className='grid__link_item' style={{ color: 'black' }}>UI/UX Design</Link>
+                                      </li>
+                                      <li className='item'>
+                                        <span><BugReportIcon sx={{ color: '#5c2cc5' }} /></span>
+                                        <Link to='/service/clouddevops' className='grid__link_item' style={{ color: 'black' }}>Cloud & DevOps</Link>
+                                      </li>
+                                    </ul>
+                                  </Item>
+                                </Grid>
+                              </Grid>
+                            </TabPanel>
+                            {/* Standard QA tab */}
+                            <TabPanel value={value} index={1} dir={theme.direction}  >
                               <Grid container sx={{ "@media (max-width:768px)": { ".MuiGrid-spacing-xs-2": {}, } }} className='grid__link' >
                                 <Grid xs={12} sm={6} className='left__grid_1' sx={{ "@media (max-width:768px)": { display: "flex", flexDirection: "column" }, width: "300px" }} >
                                   {/* <p className='dropdown__services__header' style={{ color: "#F23460" }}>Manual Testing Services</p> */}
@@ -283,7 +327,7 @@ const NavbarTop = () => {
 
                               </Grid>
                             </TabPanel>
-                            <TabPanel value={value} index={1} dir={theme.direction}>
+                            <TabPanel value={value} index={2} dir={theme.direction}>
                               <Grid container className='grid__link'>
                                 <Grid xs={12} sm={6} className='left__grid_1' sx={{ width: "350px" }}>
                                   <Item elevation={'0'} sx={{ textAlign: "left", '@media (max-width: 768px)': { display: "flex", justifyContent: "flex-start" } }} >
@@ -352,9 +396,8 @@ const NavbarTop = () => {
 
                       {/* </li> */}
 
-
+                      <li className='visible-list' onClick={handleNavbarClick}><Link to="/products">Products</Link></li>
                       <li className='visible-list' onClick={handleNavbarClick}><Link to="/contact">Contact</Link></li>
-                      {/* <li className='visible-list' ><Link to="/form">Admission Form</Link></li> */}
 
                       {localStorage.getItem('userData') && <li className='visible-list' ><Link to="/addslide">Panel</Link></li>}
                       {localStorage.getItem('userData') && <li className='visible-list' ><Link to="" onClick={() => { logOut() }}>Logout</Link></li>}

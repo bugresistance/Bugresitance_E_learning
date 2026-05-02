@@ -1,175 +1,224 @@
-import React, { useContext, useState, useEffect } from 'react'
-
-
-// Importing image
-import banner from '../image/banner-circle.png'
-import downloadCV from '../image/download-Icon.png'
-import specializingIcon1 from '../image/specilizing-icon1.png'
-import specializingIcon2 from '../image/specilizing-icon2.png'
-import specializingIcon3 from '../image/specilizing-icon3.png'
-import specializingIcon4 from '../image/specilizing-icon4.png'
-import turn from '../image/now-your-turn-right.png'
-import monkeytest from '../image/Monkey Testing.png'
-import regressiontesting from '../image/regression testing.png'
-import selenium from '../image/selenium.png'
-import smoketesting from '../image/Smoke testing.png'
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 import StudentBig from './StudentBig'
-import Footer from './Shared/Footer'
 import NavbarTop from './Shared/NavbarTop'
 import UpdatedFooter from './Shared/UpdatedFooter'
+import ProductShowcase from './ProductShowcase'
+import Partners from './Partners'
+
 const Home = () => {
+  const [activeTab, setActiveTab] = useState('all')
 
+  useEffect(() => { window.scrollTo(0, 0) }, [])
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-  
+  const devServices = [
+    { icon: '💻', title: 'Web Development', desc: 'Modern, scalable web applications built with cutting-edge frameworks.' },
+    { icon: '📱', title: 'Mobile Development', desc: 'Native & cross-platform mobile apps for iOS and Android.' },
+    { icon: '⚙️', title: 'Custom Software', desc: 'Tailored software solutions designed for your unique business needs.' },
+    { icon: '🎨', title: 'UI/UX Design', desc: 'User-centered design that creates delightful digital experiences.' },
+  ]
+
+  const testServices = [
+    { icon: '🔧', title: 'Manual Testing', desc: 'Thorough manual testing to uncover critical bugs and usability issues.' },
+    { icon: '🔗', title: 'API Testing', desc: 'Comprehensive API validation for reliability, security, and performance.' },
+    { icon: '📊', title: 'Load Testing', desc: 'Stress and performance testing to ensure your systems scale under pressure.' },
+    { icon: '🤖', title: 'Automation Testing', desc: 'CI/CD integrated test automation for faster, more reliable releases.' },
+  ]
+
+  const getVisibleServices = () => {
+    if (activeTab === 'dev') return devServices
+    if (activeTab === 'testing') return testServices
+    return [...devServices, ...testServices]
+  }
+
   return (
     <>
-      {/* <!-- start preloader --> */}
-      {/* <div class="preloader" id="preloader"></div> */}
-      {/* <!-- end preloader --> */}
-
-      {/* <a href="#" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a> */}
-
       <NavbarTop />
 
-      {/* <!-- banner-section start --> */}
-      <section id="banner-section">
-        <div class="banner-content d-flex align-items-center pb-120">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-10">
-                <div class="main-content">
-                  <div class="item one wow fadeInDown">
-                    <img src={regressiontesting} alt="image" />
-                    <h5>Regression Testing</h5>
-                  </div>
-                  <div class="item two wow fadeInDown">
-                    <img src={monkeytest} alt="image" />
-                    <h5>Monkey Testing</h5>
-                  </div>
-                  <div class="item three wow fadeInDown">
-                    <img src={selenium} alt="image" />
-                    <h5>Selenium</h5>
-                  </div>
-                  <div class="item four wow fadeInDown">
-                    <img src={smoketesting} alt="image" />
-                    <h5>Smoke Testing</h5>
-                  </div>
-                  <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                      <div class="right-area text-center">
-                        <img src={banner} class="right-img" alt="banner-circle" />
-                        <div class="download-area">
-                          <span href="#" class="download" style={{ textDecoration: "none" }}>SQA Engineer
-                            {/* <img src={downloadCV} alt="image" /> */}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+      {/* ===== MODERN HERO ===== */}
+      <section className="modern-hero">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-7 hero-content">
+              <p className="hero-tagline" style={{ animation: 'fadeInUp 0.6s ease both' }}>
+                Software Development & Quality Assurance
+              </p>
+              <h1 className="hero-heading" style={{ animation: 'fadeInUp 0.7s ease both' }}>
+                We <span className="highlight">Build.</span> We <span className="highlight">Test.</span>{' '}
+                We <span className="highlight">Deliver.</span>
+              </h1>
+              <p className="hero-description" style={{ animation: 'fadeInUp 0.8s ease both' }}>
+                End-to-end software development and quality assurance services. 
+                From concept to deployment, we craft robust, tested, and scalable digital solutions.
+              </p>
+              <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', animation: 'fadeInUp 0.9s ease both' }}>
+                <Link to="/contact" className="btn-modern-primary" style={{ textDecoration: 'none' }}>
+                  Start a Project →
+                </Link>
+                <Link to="/products" className="btn-modern-secondary" style={{ textDecoration: 'none' }}>
+                  View Products
+                </Link>
+              </div>
+              <div className="hero-stats" style={{ animation: 'fadeInUp 1s ease both' }}>
+                <div className="stat-item">
+                  <div className="stat-number">50+</div>
+                  <div className="stat-label">Clients</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-number">120+</div>
+                  <div className="stat-label">Projects</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-number">18+</div>
+                  <div className="stat-label">QA Services</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-number">99%</div>
+                  <div className="stat-label">Satisfaction</div>
                 </div>
               </div>
             </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-7 d-flex align-items-center">
-                <div class="text-area text-center">
-                  {/* <h5>HI THERE, I'M JAMES</h5> */}    
-                  <h2>SQA <span>Live</span> Course Platform</h2>
-                  <div class="btn-area d-flex align-items-center justify-content-center">
-                    <a  class="cmn-btn" style={{ textDecoration: "none" }}>Quality Begets Quality</a>
-                    {/* <a href="portfolio.html" class="cmn-btn-second" style={{ textDecoration: "none" }}>View Project
-                      <span class="btn-icon"></span>
-                    </a> */}
-                  </div>
+            <div className="col-lg-5 d-none d-lg-block" style={{ animation: 'fadeInRight 0.9s ease both' }}>
+              {/* Decorative code snippet visual */}
+              <div style={{
+                background: 'rgba(255,255,255,0.05)',
+                backdropFilter: 'blur(10px)',
+                borderRadius: '20px',
+                border: '1px solid rgba(255,255,255,0.1)',
+                padding: '36px',
+                fontFamily: "'Courier New', monospace",
+                fontSize: '14px',
+                color: 'rgba(255,255,255,0.7)',
+                lineHeight: '2',
+                animation: 'float 4s ease-in-out infinite'
+              }}>
+                <div style={{ color: '#F23460', fontWeight: '700', marginBottom: '8px', fontSize: '16px' }}>
+                  {'// BugResistance'}
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <!-- banner-section end -->
-
-      <!-- Specilizing In start --> */}
-      <section id="specilizing-section" >
-        <div class="overlay pt-120 pb-120">
-          <div class="container wow fadeInUp">
-            <div class="row justify-content-center text-center">
-              <div class="col-lg-6" >
-                <div class="section-header">
-                  <h4 class="sub-title">What We Do</h4>
-                  <h3 class="title">Specializing In</h3>
-                 
+                <div><span style={{ color: '#7b4fd6' }}>const</span> services = {'{'}</div>
+                <div style={{ paddingLeft: '20px' }}>
+                  <span style={{ color: '#F23460' }}>development</span>: <span style={{ color: '#4ade80' }}>'✓ Web, Mobile, Cloud'</span>,
                 </div>
-              </div>
-            </div>
-            <div class="row" >
-              <div class="col-lg-3 col-md-6">
-                <div class="single-item">
-                  <img src={specializingIcon1} alt="image" />
-                 <h2> Manual Testing</h2>
+                <div style={{ paddingLeft: '20px' }}>
+                  <span style={{ color: '#F23460' }}>testing</span>: <span style={{ color: '#4ade80' }}>'✓ Manual, Automation, API'</span>,
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="single-item">
-                  <img src={specializingIcon2} alt="image" />
-                  <h2> API Testing</h2>
+                <div style={{ paddingLeft: '20px' }}>
+                  <span style={{ color: '#F23460' }}>product</span>: <span style={{ color: '#4ade80' }}>'✓ Document Scanner OCR'</span>,
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="single-item">
-                  <img src={specializingIcon3} alt="image" />
-                  <h2>Load Testing</h2>
+                <div style={{ paddingLeft: '20px' }}>
+                  <span style={{ color: '#F23460' }}>quality</span>: <span style={{ color: '#4ade80' }}>'✓ 99% client satisfaction'</span>
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="single-item">
-                  <img src={specializingIcon4} alt="image" />
-                 <h2>Automation Testing</h2>
+                <div>{'}'}</div>
+                <div style={{ marginTop: '8px' }}>
+                  <span style={{ color: '#7b4fd6' }}>export default</span> services
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* <!-- Specilizing In end --> */}
-      {/* <!-- Now Your Turn start --> */}
-      <section id="now-your-turn">
-        <div class="overlay pt-120 pb-120">
-          <div class="container wow fadeInUp">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="section-header">
-                  {/* <h4 class="sub-title-alt">Now Your Turn</h4> */}
-                  <h3 class="title">Interested in Building a Career in SQA?</h3>
-                  <p>Software quality assurance (SQA) is a process that assures that all software engineering processes, methods, activities, and work items are monitored and comply with the defined standards.</p>
-                  <a class="cmn-btn" style={{ textDecoration: "none" }}>Quality Begets Quality</a>
-                </div>
+
+      {/* ===== WHAT WE DO - SERVICES ===== */}
+      <section className="modern-section" style={{ background: '#f7f5ff', paddingTop: '80px', paddingBottom: '80px' }}>
+        <div className="container">
+          <div className="text-center">
+            <span className="section-badge" style={{
+              display: 'inline-block',
+              background: 'linear-gradient(135deg, #5c2cc5, #F23460)',
+              color: '#fff',
+              fontSize: '13px',
+              fontWeight: '600',
+              letterSpacing: '1.5px',
+              textTransform: 'uppercase',
+              padding: '6px 18px',
+              borderRadius: '50px',
+              marginBottom: '16px'
+            }}>What We Do</span>
+            <h2 className="section-title" style={{
+              fontFamily: "'Poppins', sans-serif",
+              fontSize: '38px',
+              fontWeight: '700',
+              color: '#1a1333',
+              marginBottom: '16px'
+            }}>Our Specializations</h2>
+            <p className="section-subtitle" style={{
+              fontSize: '18px',
+              color: '#6b6b6b',
+              maxWidth: '600px',
+              margin: '0 auto 24px',
+              lineHeight: '1.7'
+            }}>
+              Comprehensive software development and quality assurance under one roof
+            </p>
+          </div>
+
+          {/* Tab Toggle */}
+          <div className="service-tabs">
+            <button
+              className={`service-tab-btn ${activeTab === 'all' ? 'active' : ''}`}
+              onClick={() => setActiveTab('all')}
+            >All Services</button>
+            <button
+              className={`service-tab-btn ${activeTab === 'dev' ? 'active' : ''}`}
+              onClick={() => setActiveTab('dev')}
+            >Development</button>
+            <button
+              className={`service-tab-btn ${activeTab === 'testing' ? 'active' : ''}`}
+              onClick={() => setActiveTab('testing')}
+            >Testing</button>
+          </div>
+
+          {/* Services Grid */}
+          <div className="services-grid">
+            {getVisibleServices().map((s, i) => (
+              <div className="service-card-modern" key={i} style={{ animationDelay: `${i * 0.08}s` }}>
+                <div className="card-icon">{s.icon}</div>
+                <h4 className="card-title">{s.title}</h4>
+                <p className="card-desc">{s.desc}</p>
               </div>
-            </div>
+            ))}
+          </div>
+
+          <div className="text-center" style={{ marginTop: '40px' }}>
+            <Link to="/contact" className="btn-modern-primary" style={{ textDecoration: 'none' }}>
+              View All Services →
+            </Link>
           </div>
         </div>
-        <div class="right-area">
-          <img src={turn} alt="image" />
-        </div>
-      
       </section>
-      {/* <!-- Now Your Turn end --> */}
-      <StudentBig/>
-      {/* What Student Say */}
-      {/* <section id="what_student_say">
-        <CardSlider />
-      </section> */}
 
+      {/* ===== PRODUCT SHOWCASE ===== */}
+      <ProductShowcase />
 
-      {/* <!-- footer-section start --> */}
+      {/* ===== PARTNERS ===== */}
+      <Partners />
 
-      
-     <UpdatedFooter/>
+      {/* ===== CTA SECTION ===== */}
+      <section className="modern-cta">
+        <div className="container">
+          <h2 className="cta-heading">Ready to Build Your Next Project?</h2>
+          <p className="cta-text">
+            From ideation to deployment, our team of developers and QA engineers 
+            deliver production-ready solutions with zero compromises on quality.
+          </p>
+          <div className="cta-buttons">
+            <Link to="/contact" className="btn-cta-white" style={{ textDecoration: 'none' }}>
+              Start a Project
+            </Link>
+            <Link to="/contact" className="btn-cta-outline" style={{ textDecoration: 'none' }}>
+              Get a Free Quote
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== TESTIMONIALS ===== */}
+      <StudentBig />
+
+      {/* ===== FOOTER ===== */}
+      <UpdatedFooter />
     </>
-
   )
 }
 

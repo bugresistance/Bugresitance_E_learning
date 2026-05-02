@@ -16,6 +16,7 @@ import './css/owl.theme.default.min.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './css/service.css'
+import './css/modern.css'
 import 'react-slideshow-image/dist/styles.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -52,6 +53,13 @@ import AlTesting from './Component/Services/SpecializedSQA/AlTesting'
 import GlobalizationTesting from './Component/Services/SpecializedSQA/GlobalizationTesting'
 import CourseLists from './Component/course/CourseLists'
 import CourseTwo from './Component/course/course2/Main'
+import ProductPage from './Component/ProductPage'
+import WebDevelopment from './Component/Services/Development/WebDevelopment'
+import MobileDevelopment from './Component/Services/Development/MobileDevelopment'
+import CustomSoftware from './Component/Services/Development/CustomSoftware'
+import ApiIntegration from './Component/Services/Development/ApiIntegration'
+import UiUxDesign from './Component/Services/Development/UiUxDesign'
+import CloudDevops from './Component/Services/Development/CloudDevops'
 
 const App = () => {
   const StandardSQA = () => {
@@ -105,6 +113,13 @@ const App = () => {
         <Route path='form' element={<AdmissionForm />} />
         <Route path='/adminpanelstudentdetail' exact element={<UserProtected><StudentDetails /></UserProtected>} />
         <Route path='/courselists' exact element={<CourseLists />} />
+        <Route path='/products' exact element={<ProductPage />} />
+        <Route path='/service/webdevelopment' exact element={<WebDevelopment />} />
+        <Route path='/service/mobiledevelopment' exact element={<MobileDevelopment />} />
+        <Route path='/service/customsoftware' exact element={<CustomSoftware />} />
+        <Route path='/service/apiintegration' exact element={<ApiIntegration />} />
+        <Route path='/service/uiuxdesign' exact element={<UiUxDesign />} />
+        <Route path='/service/clouddevops' exact element={<CloudDevops />} />
       </Routes>
       <ToastContainer />
     </div>
