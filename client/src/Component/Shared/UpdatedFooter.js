@@ -27,6 +27,10 @@ const UpdatedFooter = () => {
                             <div style={{ marginTop: '20px' }}>
                                 <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '14px' }}>info@bugresistance.com</p>
                                 <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '14px' }}>+8801605150545</p>
+                                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px', lineHeight: '1.6', marginTop: '10px' }}>
+                                    Rowshon Complex, Plot M-26, Building 1,<br />
+                                    Mirpur-14, Mirpur, Bangladesh, 1216
+                                </p>
                             </div>
                         </div>
 
